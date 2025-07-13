@@ -1,0 +1,2 @@
+source /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/bootloader/gdbinit/symbols
+source /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/bootloader/gdbinit/connect

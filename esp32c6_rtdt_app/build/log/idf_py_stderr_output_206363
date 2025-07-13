@@ -1,0 +1,395 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x420013c0: uart_ll_get_txfifo_len at /home/ronaldo/esp/esp-idf/components/hal/esp32c6/include/hal/uart_ll.h:615
+---  (inlined by) panic_print_char_uart at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:96
+[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/esp32c6_rtdt_app.elf', '-ex', 'target remote | "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python" -m esp_idf_panic_decoder --target esp32c6 "/tmp/tmpmur4_bya"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n    exec(code, run_globals)\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 152, in parse_idf_riscv_panic_output\n    stack_base_addr, stack_data = get_stack_addr_and_data(res)\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 120, in get_stack_addr_and_data\n    assert base_addr == prev_base_addr + bytes_in_line\nAssertionError\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/esp32c6_rtdt_app.elf', '-ex', 'target remote | "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python" -m esp_idf_panic_decoder --target esp32c6 "/tmp/tmp62m_ln8o"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n    exec(code, run_globals)\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 138, in parse_idf_riscv_panic_output\n    raise ValueError("Couldn\'t parse panic handler output")\nValueError: Couldn\'t parse panic handler output\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', '/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/esp32c6_rtdt_app.elf', '-ex', 'target remote | "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python" -m esp_idf_panic_decoder --target esp32c6 "/tmp/tmp_4foblnt"', '-ex', 'bt']' returned non-zero exit status 1.
+--- Warning: b'Traceback (most recent call last):\n  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code\n    exec(code, run_globals)\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/__main__.py", line 4, in <module>\n    main()\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 289, in main\n    panic_info = PANIC_OUTPUT_PARSERS[args.target](args.input_file.read())\n  File "/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/lib/python3.10/site-packages/esp_idf_panic_decoder/gdb_panic_server.py", line 138, in parse_idf_riscv_panic_output\n    raise ValueError("Couldn\'t parse panic handler output")\nValueError: Couldn\'t parse panic handler output\nRemote communication error.  Target disconnected: Connection reset by peer.\nNo stack.\n'
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m.[0m[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408009f2: panic_abort at /home/ronaldo/esp/esp-idf/components/esp_system/panic.c:483
+--- 0x408056ca: __ubsan_include at /home/ronaldo/esp/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at /home/ronaldo/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

@@ -1,0 +1,1138 @@
+[0;32mI (113) esp_image: segment 3: paddr=000351f4 vaddr=40805d8c sizeESP-ROM:esp32c6-20220919[0m
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803eea
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe90
+load:0x4086e610,len:0x3068
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 12 2025 04:44:37[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=0a264h ( 41572) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=0001a28c vaddr=40800000 size=05d8ch ( 23948) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=151cch ( 86476) map[0m
+[0;32mI (113) esp_image: segment 3: paddr=000351f4 vaddr=40805d8c size=06f70h ( 28528) load[0m
+[0;32mI (120) esp_image: segment 4: paddr=0003c16c vaddr=4080cd00 size=017b0h (  6064) load[0m
+[0;32mI (125) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (125) boot: Disabling RNG early entropy source...[0m
+[0;32mI (138) cpu_start: Unicore app[0m
+[0;32mI (148) cpu_start: Pro cpu start user code[0m
+[0;32mI (148) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (148) app_init: Application information:[0m
+[0;32mI (148) app_init: Project name:     esp32c6_rtdt_app[0m
+[0;32mI (152) app_init: App version:      39aa84f-dirty[0m
+[0;32mI (157) app_init: Compile time:     Jul 13 2025 00:10:54[0m
+[0;32mI (162) app_init: ELF file SHA256:  865e662ed...[0m
+[0;32mI (166) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (170) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (174) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (178) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (182) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (188) heap_init: At 40810090 len 0006C580 (433 KiB): RAM[0m
+[0;32mI (193) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (198) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (204) spi_flash: detected chip: generic[0m
+[0;32mI (207) spi_flash: flash io: dio[0m
+[0;33mW (210) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (223) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (232) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (239) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (245) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (249) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (254) main_task: Started on CPU0[0m
+[0;32mI (254) main_task: Calling app_main()[0m
+[0;32mI (254) System: System initialized successfully. Starting task execution[0m
+[0;33mW (264) SystemMonitor: [0s] Wi-Fi: not connected[0m
+[0;32mI (264) SystemMonitor: [0s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (274) SystemMonitor: [0s] Heap: free=448836 bytes | min ever=448836 bytes[0m
+[0;32mI (274) main_task: Returned from app_main()[0m
+[0;32mI (1274) SensorReadout: Accel Bias [m/s²]: X=0.69 Y=0.58 Z=-6.77[0m
+[0;32mI (1274) SensorReadout: Accel [m/s²]: X=-0.02 Y=0.02 Z=-0.02[0m
+[0;32mI (1474) SensorReadout: Accel [m/s²]: X=-0.00 Y=0.01 Z=-0.01[0m
+[0;32mI (1674) SensorReadout: Accel [m/s²]: X=-0.06 Y=0.02 Z=-0.03[0m
+[0;32mI (1874) SensorReadout: Accel [m/s²]: X=0.01 Y=-0.04 Z=-0.00[0m
+[0;32mI (2074) SensorReadout: Accel [m/s²]: X=-0.03 Y=-0.01 Z=-0.01[0m
+[0;32mI (2274) SensorReadout: Accel [m/s²]: X=-0.01 Y=-0.02 Z=0.02[0m
+[0;32mI (2474) SensorReadout: Accel [m/s²]: X=-0.02 Y=0.01 Z=-0.04[0m
+[0;32mI (2674) SensorReadout: Accel [m/s²]: X=0.00 Y=0.00 Z=0.02[0m
+[0;32mI (2874) SensorReadout: Accel [m/s²]: X=-0.02 Y=0.01 Z=-0.02[0m
+[0;32mI (3074) SensorReadout: Accel [m/s²]: X=0.01 Y=-0.01 Z=-0.00[0m
+[0;32mI (3274) SensorReadout: Accel [m/s²]: X=0.01 Y=-0.00 Z=-0.02[0m
+[0;32mI (3474) SensorReadout: Accel [m/s²]: X=0.01 Y=-0.01 Z=0.01[0m
+[0;32mI (3674) SensorReadout: Accel [m/s²]: X=0.01 Y=-0.02 Z=0.01[0m
+[0;32mI (3874) SensorReadout: Accel [m/s²]: X=-0.00 Y=-0.00 Z=-0.02[0m
+[0;32mI (4074) SensorReadout: Accel [m/s²]: X=0.01 Y=0.02 Z=-0.01[0m
+[0;32mI (4274) SensorReadout: Accel [m/s²]: X=0.01 Y=0.01 Z=0.01[0m
+[0;32mI (4474) SensorReadout: Accel [m/s²]: X=0.02 Y=-0.02 Z=0.01[0m
+[0;32mI (4674) SensorReadout: Accel [m/s²]: X=-0.00 Y=-0.03 Z=0.01[0m
+[0;32mI (4874) SensorReadout: Accel [m/s²]: X=-0.01 Y=-0.01 Z=-0.01[0m
+[0;32mI (5074) SensorReadout: Accel [m/s²]: X=-0.02 Y=0.01 Z=-0.00[0m
+[0;32mI (5274) SensorReadout: Accel [m/s²]: X=-0.01 Y=0.00 Z=0.00[0m
+[0;32mI (5474) SensorReadout: Accel [m/s²]: X=-2.25 Y=1.76 Z=1.11[0m
+[0;32mI (5674) SensorReadout: Accel [m/s²]: X=-1.69 Y=5.23 Z=1.74[0m
+[0;32mI (5874) SensorReadout: Accel [m/s²]: X=0.31 Y=4.21 Z=5.46[0m
+[0;32mI (6074) SensorReadout: Accel [m/s²]: X=-1.50 Y=5.58 Z=3.20[0m
+[0;32mI (6274) SensorReadout: Accel [m/s²]: X=-2.41 Y=5.37 Z=2.54[0m
+[0;32mI (6474) SensorReadout: Accel [m/s²]: X=-2.43 Y=3.03 Z=1.35[0m
+[0;32mI (6674) SensorReadout: Accel [m/s²]: X=-0.65 Y=2.85 Z=0.05[0m
+[0;32mI (6874) SensorReadout: Accel [m/s²]: X=-1.12 Y=0.33 Z=0.08[0m
+[0;32mI (7074) SensorReadout: Accel [m/s²]: X=-0.98 Y=0.31 Z=0.08[0m
+[0;32mI (7274) SensorReadout: Accel [m/s²]: X=-0.96 Y=0.34 Z=0.09[0m
+[0;32mI (7474) SensorReadout: Accel [m/s²]: X=-0.92 Y=0.28 Z=0.05[0m
+[0;32mI (7674) SensorReadout: Accel [m/s²]: X=-0.89 Y=0.31 Z=0.06[0m
+[0;32mI (7874) SensorReadout: Accel [m/s²]: X=-0.85 Y=0.33 Z=0.07[0m
+[0;32mI (8074) SensorReadout: Accel [m/s²]: X=-0.79 Y=0.31 Z=0.03[0m
+[0;32mI (8274) SensorReadout: Accel [m/s²]: X=-0.82 Y=0.31 Z=0.06[0m
+[0;32mI (8474) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.31 Z=0.03[0m
+[0;32mI (8674) SensorReadout: Accel [m/s²]: X=-0.77 Y=0.31 Z=0.03[0m
+[0;32mI (8874) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.32 Z=0.04[0m
+[0;32mI (9074) SensorReadout: Accel [m/s²]: X=-0.77 Y=0.31 Z=0.09[0m
+[0;32mI (9274) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.32 Z=0.03[0m
+[0;32mI (9474) SensorReadout: Accel [m/s²]: X=-0.71 Y=0.32 Z=0.04[0m
+[0;32mI (9674) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.32 Z=0.05[0m
+[0;32mI (9874) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.30 Z=0.11[0m
+[0;32mI (10074) SensorReadout: Accel [m/s²]: X=0.05 Y=2.04 Z=1.39[0m
+[0;33mW (10274) SystemMonitor: [10s] Wi-Fi: not connected[0m
+[0;32mI (10274) SystemMonitor: [10s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (10274) SystemMonitor: [10s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (10274) SensorReadout: Accel [m/s²]: X=-0.88 Y=3.77 Z=-2.82[0m
+[0;32mI (10484) SensorReadout: Accel [m/s²]: X=-0.90 Y=4.48 Z=0.55[0m
+[0;32mI (10684) SensorReadout: Accel [m/s²]: X=1.75 Y=3.73 Z=3.38[0m
+[0;32mI (10884) SensorReadout: Accel [m/s²]: X=1.22 Y=4.77 Z=1.81[0m
+[0;32mI (11084) SensorReadout: Accel [m/s²]: X=-0.14 Y=4.98 Z=1.23[0m
+[0;32mI (11284) SensorReadout: Accel [m/s²]: X=-0.85 Y=3.30 Z=0.81[0m
+[0;32mI (11484) SensorReadout: Accel [m/s²]: X=-1.02 Y=2.08 Z=0.79[0m
+[0;32mI (11684) SensorReadout: Accel [m/s²]: X=-1.70 Y=1.48 Z=-1.45[0m
+[0;32mI (11884) SensorReadout: Accel [m/s²]: X=-0.59 Y=0.34 Z=0.03[0m
+[0;32mI (12084) SensorReadout: Accel [m/s²]: X=-0.51 Y=0.19 Z=0.03[0m
+[0;32mI (12284) SensorReadout: Accel [m/s²]: X=0.30 Y=2.69 Z=2.10[0m
+[0;32mI (12484) SensorReadout: Accel [m/s²]: X=-1.78 Y=3.60 Z=1.35[0m
+[0;32mI (12684) SensorReadout: Accel [m/s²]: X=-1.03 Y=-0.98 Z=0.24[0m
+[0;32mI (12884) SensorReadout: Accel [m/s²]: X=-0.25 Y=1.25 Z=-1.06[0m
+[0;32mI (13084) SensorReadout: Accel [m/s²]: X=-0.87 Y=0.33 Z=0.20[0m
+[0;32mI (13284) SensorReadout: Accel [m/s²]: X=-0.91 Y=0.31 Z=0.11[0m
+[0;32mI (13484) SensorReadout: Accel [m/s²]: X=-0.93 Y=0.31 Z=0.06[0m
+[0;32mI (13684) SensorReadout: Accel [m/s²]: X=-0.95 Y=0.33 Z=0.07[0m
+[0;32mI (13884) SensorReadout: Accel [m/s²]: X=-0.90 Y=0.30 Z=0.04[0m
+[0;32mI (14084) SensorReadout: Accel [m/s²]: X=-0.91 Y=0.34 Z=0.03[0m
+[0;32mI (14284) SensorReadout: Accel [m/s²]: X=-0.87 Y=0.30 Z=0.04[0m
+[0;32mI (14484) SensorReadout: Accel [m/s²]: X=-0.89 Y=0.37 Z=0.10[0m
+[0;32mI (14684) SensorReadout: Accel [m/s²]: X=-0.89 Y=0.32 Z=0.06[0m
+[0;32mI (14884) SensorReadout: Accel [m/s²]: X=-0.83 Y=0.33 Z=0.06[0m
+[0;32mI (15084) SensorReadout: Accel [m/s²]: X=-0.81 Y=0.30 Z=0.09[0m
+[0;32mI (15284) SensorReadout: Accel [m/s²]: X=-0.87 Y=0.32 Z=0.04[0m
+[0;32mI (15484) SensorReadout: Accel [m/s²]: X=-0.82 Y=0.31 Z=0.09[0m
+[0;32mI (15684) SensorReadout: Accel [m/s²]: X=-0.81 Y=0.34 Z=0.05[0m
+[0;32mI (15884) SensorReadout: Accel [m/s²]: X=-0.79 Y=0.31 Z=0.05[0m
+[0;32mI (16084) SensorReadout: Accel [m/s²]: X=-0.80 Y=0.30 Z=0.04[0m
+[0;32mI (16284) SensorReadout: Accel [m/s²]: X=-0.80 Y=0.31 Z=0.04[0m
+[0;32mI (16484) SensorReadout: Accel [m/s²]: X=-0.77 Y=0.32 Z=0.06[0m
+[0;32mI (16684) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.34 Z=0.08[0m
+[0;32mI (16884) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.31 Z=0.04[0m
+[0;32mI (17084) SensorReadout: Accel [m/s²]: X=-0.80 Y=0.32 Z=0.02[0m
+[0;32mI (17284) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.32 Z=0.06[0m
+[0;32mI (17484) SensorReadout: Accel [m/s²]: X=-0.77 Y=0.36 Z=0.06[0m
+[0;32mI (17684) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.30 Z=0.06[0m
+[0;32mI (17884) SensorReadout: Accel [m/s²]: X=-0.80 Y=0.34 Z=0.05[0m
+[0;32mI (18084) SensorReadout: Accel [m/s²]: X=-0.79 Y=0.31 Z=0.06[0m
+[0;32mI (18284) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.29 Z=0.03[0m
+[0;32mI (18484) SensorReadout: Accel [m/s²]: X=-0.77 Y=0.34 Z=0.06[0m
+[0;32mI (18684) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.33 Z=0.05[0m
+[0;32mI (18884) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.31 Z=0.04[0m
+[0;32mI (19084) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.32 Z=0.04[0m
+[0;32mI (19284) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.32 Z=0.04[0m
+[0;32mI (19484) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.32 Z=0.04[0m
+[0;32mI (19684) SensorReadout: Accel [m/s²]: X=-0.77 Y=0.32 Z=0.05[0m
+[0;32mI (19884) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.32 Z=0.04[0m
+[0;32mI (20084) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.32 Z=0.04[0m
+[0;33mW (20274) SystemMonitor: [20s] Wi-Fi: not connected[0m
+[0;32mI (20274) SystemMonitor: [20s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (20274) SystemMonitor: [20s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (20284) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.31 Z=0.03[0m
+[0;32mI (20484) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.33 Z=0.05[0m
+[0;32mI (20684) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.31 Z=0.05[0m
+[0;32mI (20884) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.32 Z=0.06[0m
+[0;32mI (21084) SensorReadout: Accel [m/s²]: X=-0.78 Y=0.32 Z=0.07[0m
+[0;32mI (21284) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.28 Z=0.03[0m
+[0;32mI (21484) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.31 Z=0.04[0m
+[0;32mI (21684) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.32 Z=0.05[0m
+[0;32mI (21884) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.35 Z=0.03[0m
+[0;32mI (22084) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.31 Z=0.01[0m
+[0;32mI (22284) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.30 Z=0.04[0m
+[0;32mI (22484) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.34 Z=0.06[0m
+[0;32mI (22684) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.31 Z=0.03[0m
+[0;32mI (22884) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.33 Z=0.02[0m
+[0;32mI (23084) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.33 Z=0.06[0m
+[0;32mI (23284) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.34 Z=0.03[0m
+[0;32mI (23484) SensorReadout: Accel [m/s²]: X=-0.74 Y=0.34 Z=0.02[0m
+[0;32mI (23684) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.30 Z=0.04[0m
+[0;32mI (23884) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.33 Z=0.03[0m
+[0;32mI (24084) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.34 Z=0.06[0m
+[0;32mI (24284) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.32 Z=0.05[0m
+[0;32mI (24484) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.33 Z=0.06[0m
+[0;32mI (24684) SensorReadout: Accel [m/s²]: X=-0.71 Y=0.33 Z=0.02[0m
+[0;32mI (24884) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.34 Z=0.06[0m
+[0;32mI (25084) SensorReadout: Accel [m/s²]: X=-0.70 Y=0.32 Z=0.02[0m
+[0;32mI (25284) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.33 Z=0.06[0m
+[0;32mI (25484) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.31 Z=0.02[0m
+[0;32mI (25684) SensorReadout: Accel [m/s²]: X=-0.71 Y=0.33 Z=0.08[0m
+[0;32mI (25884) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.33 Z=0.03[0m
+[0;32mI (26084) SensorReadout: Accel [m/s²]: X=-0.71 Y=0.32 Z=0.08[0m
+[0;32mI (26284) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.29 Z=0.03[0m
+[0;32mI (26484) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.32 Z=0.02[0m
+[0;32mI (26684) SensorReadout: Accel [m/s²]: X=-0.71 Y=0.33 Z=0.02[0m
+[0;32mI (26884) SensorReadout: Accel [m/s²]: X=-0.70 Y=0.31 Z=0.06[0m
+[0;32mI (27084) SensorReadout: Accel [m/s²]: X=-0.72 Y=0.29 Z=0.07[0m
+[0;32mI (27284) SensorReadout: Accel [m/s²]: X=-0.67 Y=0.27 Z=0.02[0m
+[0;32mI (27484) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.36 Z=0.03[0m
+[0;32mI (27684) SensorReadout: Accel [m/s²]: X=-0.79 Y=0.31 Z=-0.20[0m
+[0;32mI (27884) SensorReadout: Accel [m/s²]: X=-1.04 Y=0.36 Z=-0.10[0m
+[0;32mI (28084) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.27 Z=0.08[0m
+[0;32mI (28284) SensorReadout: Accel [m/s²]: X=-0.79 Y=0.36 Z=0.14[0m
+[0;32mI (28484) SensorReadout: Accel [m/s²]: X=-0.91 Y=0.32 Z=0.02[0m
+[0;32mI (28684) SensorReadout: Accel [m/s²]: X=-0.97 Y=0.27 Z=0.03[0m
+[0;32mI (28884) SensorReadout: Accel [m/s²]: X=-0.75 Y=0.30 Z=0.10[0m
+[0;32mI (29084) SensorReadout: Accel [m/s²]: X=-0.68 Y=0.32 Z=0.02[0m
+[0;32mI (29284) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.32 Z=0.13[0m
+[0;32mI (29484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.36 Z=0.06[0m
+[0;32mI (29684) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.30 Z=-0.01[0m
+[0;32mI (29884) SensorReadout: Accel [m/s²]: X=-0.61 Y=0.35 Z=0.06[0m
+[0;32mI (30084) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.31 Z=0.09[0m
+[0;33mW (30274) SystemMonitor: [30s] Wi-Fi: not connected[0m
+[0;32mI (30274) SystemMonitor: [30s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (30274) SystemMonitor: [30s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (30284) SensorReadout: Accel [m/s²]: X=-0.69 Y=0.32 Z=0.03[0m
+[0;32mI (30484) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.39 Z=0.10[0m
+[0;32mI (30684) SensorReadout: Accel [m/s²]: X=-0.73 Y=0.29 Z=0.05[0m
+[0;32mI (30884) SensorReadout: Accel [m/s²]: X=-0.64 Y=0.36 Z=0.04[0m
+[0;32mI (31084) SensorReadout: Accel [m/s²]: X=-0.61 Y=0.32 Z=0.07[0m
+[0;32mI (31284) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.30 Z=0.07[0m
+[0;32mI (31484) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.33 Z=0.06[0m
+[0;32mI (31684) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.33 Z=0.02[0m
+[0;32mI (31884) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.33 Z=0.03[0m
+[0;32mI (32084) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.31 Z=0.05[0m
+[0;32mI (32284) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.32 Z=0.04[0m
+[0;32mI (32484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.32 Z=0.05[0m
+[0;32mI (32684) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.33 Z=0.05[0m
+[0;32mI (32884) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.35 Z=0.04[0m
+[0;32mI (33084) SensorReadout: Accel [m/s²]: X=-0.47 Y=0.28 Z=0.07[0m
+[0;32mI (33284) SensorReadout: Accel [m/s²]: X=-0.42 Y=0.31 Z=0.05[0m
+[0;32mI (33484) SensorReadout: Accel [m/s²]: X=-0.44 Y=0.33 Z=0.03[0m
+[0;32mI (33684) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.33 Z=0.02[0m
+[0;32mI (33884) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.32 Z=0.02[0m
+[0;32mI (34084) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.30 Z=0.04[0m
+[0;32mI (34284) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.33 Z=0.03[0m
+[0;32mI (34484) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.30 Z=-0.00[0m
+[0;32mI (34684) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.34 Z=-0.01[0m
+[0;32mI (34884) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.32 Z=0.03[0m
+[0;32mI (35084) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.33 Z=0.04[0m
+[0;32mI (35284) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.28 Z=0.05[0m
+[0;32mI (35484) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.29 Z=0.04[0m
+[0;32mI (35684) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.33 Z=0.06[0m
+[0;32mI (35884) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.33 Z=0.03[0m
+[0;32mI (36084) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.34 Z=0.02[0m
+[0;32mI (36284) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.33 Z=-0.00[0m
+[0;32mI (36484) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.34 Z=0.00[0m
+[0;32mI (36684) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.30 Z=0.01[0m
+[0;32mI (36884) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.30 Z=0.06[0m
+[0;32mI (37084) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.30 Z=0.05[0m
+[0;32mI (37284) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.31 Z=0.02[0m
+[0;32mI (37484) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.33 Z=0.04[0m
+[0;32mI (37684) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.31 Z=0.05[0m
+[0;32mI (37884) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.29 Z=0.01[0m
+[0;32mI (38084) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.33 Z=0.04[0m
+[0;32mI (38284) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.32 Z=0.03[0m
+[0;32mI (38484) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.30 Z=0.06[0m
+[0;32mI (38684) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.34 Z=0.02[0m
+[0;32mI (38884) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.37 Z=0.06[0m
+[0;32mI (39084) SensorReadout: Accel [m/s²]: X=-0.50 Y=0.34 Z=-0.03[0m
+[0;32mI (39284) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.33 Z=0.03[0m
+[0;32mI (39484) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.34 Z=0.01[0m
+[0;32mI (39684) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.39 Z=0.04[0m
+[0;32mI (39884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.27 Z=0.01[0m
+[0;32mI (40084) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.36 Z=0.04[0m
+[0;33mW (40274) SystemMonitor: [40s] Wi-Fi: not connected[0m
+[0;32mI (40274) SystemMonitor: [40s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (40274) SystemMonitor: [40s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (40284) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.33 Z=0.05[0m
+[0;32mI (40484) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.34 Z=0.07[0m
+[0;32mI (40684) SensorReadout: Accel [m/s²]: X=-0.49 Y=-0.18 Z=-0.08[0m
+[0;32mI (40884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.35 Z=0.02[0m
+[0;32mI (41084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.34 Z=0.06[0m
+[0;32mI (41284) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.34 Z=0.05[0m
+[0;32mI (41484) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.35 Z=0.00[0m
+[0;32mI (41684) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.36 Z=0.06[0m
+[0;32mI (41884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.33 Z=0.03[0m
+[0;32mI (42084) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.33 Z=0.01[0m
+[0;32mI (42284) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.37 Z=0.05[0m
+[0;32mI (42484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.32 Z=0.02[0m
+[0;32mI (42684) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.35 Z=0.01[0m
+[0;32mI (42884) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.36 Z=0.02[0m
+[0;32mI (43084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.32 Z=0.06[0m
+[0;32mI (43284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.36 Z=0.03[0m
+[0;32mI (43484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.33 Z=0.06[0m
+[0;32mI (43684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.34 Z=0.04[0m
+[0;32mI (43884) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.34 Z=0.00[0m
+[0;32mI (44084) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.34 Z=0.05[0m
+[0;32mI (44284) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.38 Z=0.08[0m
+[0;32mI (44484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.32 Z=0.01[0m
+[0;32mI (44684) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.30 Z=0.03[0m
+[0;32mI (44884) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.33 Z=0.03[0m
+[0;32mI (45084) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.33 Z=0.03[0m
+[0;32mI (45284) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.34 Z=0.05[0m
+[0;32mI (45484) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.31 Z=0.07[0m
+[0;32mI (45684) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.32 Z=0.00[0m
+[0;32mI (45884) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.35 Z=0.03[0m
+[0;32mI (46084) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.32 Z=0.05[0m
+[0;32mI (46284) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.31 Z=-0.09[0m
+[0;32mI (46484) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.34 Z=-0.05[0m
+[0;32mI (46684) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.34 Z=0.02[0m
+[0;32mI (46884) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.27 Z=-0.00[0m
+[0;32mI (47084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.36 Z=0.04[0m
+[0;32mI (47284) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.30 Z=0.02[0m
+[0;32mI (47484) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.32 Z=0.05[0m
+[0;32mI (47684) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.35 Z=0.03[0m
+[0;32mI (47884) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.33 Z=0.03[0m
+[0;32mI (48084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.34 Z=0.08[0m
+[0;32mI (48284) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.36 Z=0.01[0m
+[0;32mI (48484) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.32 Z=0.07[0m
+[0;32mI (48684) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.33 Z=0.02[0m
+[0;32mI (48884) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.28 Z=0.02[0m
+[0;32mI (49084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.36 Z=0.03[0m
+[0;32mI (49284) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.33 Z=-0.01[0m
+[0;32mI (49484) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.34 Z=0.02[0m
+[0;32mI (49684) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.32 Z=0.05[0m
+[0;32mI (49884) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.32 Z=0.02[0m
+[0;32mI (50084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.35 Z=0.07[0m
+[0;33mW (50274) SystemMonitor: [50s] Wi-Fi: not connected[0m
+[0;32mI (50274) SystemMonitor: [50s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (50274) SystemMonitor: [50s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (50284) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.34 Z=0.04[0m
+[0;32mI (50484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.31 Z=0.02[0m
+[0;32mI (50684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.33 Z=0.03[0m
+[0;32mI (50884) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.33 Z=0.05[0m
+[0;32mI (51084) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.34 Z=0.02[0m
+[0;32mI (51284) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.33 Z=0.03[0m
+[0;32mI (51484) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.34 Z=0.09[0m
+[0;32mI (51684) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.30 Z=0.00[0m
+[0;32mI (51884) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.34 Z=0.00[0m
+[0;32mI (52084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.32 Z=0.03[0m
+[0;32mI (52284) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.33 Z=0.04[0m
+[0;32mI (52484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.39 Z=0.07[0m
+[0;32mI (52684) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.34 Z=0.02[0m
+[0;32mI (52884) SensorReadout: Accel [m/s²]: X=-0.43 Y=0.41 Z=0.62[0m
+[0;32mI (53084) SensorReadout: Accel [m/s²]: X=-0.19 Y=-0.00 Z=0.36[0m
+[0;32mI (53284) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.25 Z=-0.00[0m
+[0;32mI (53484) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.31 Z=-0.04[0m
+[0;32mI (53684) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.26 Z=0.24[0m
+[0;32mI (53884) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.36 Z=0.03[0m
+[0;32mI (54084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.26 Z=0.06[0m
+[0;32mI (54284) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.25 Z=-0.00[0m
+[0;32mI (54484) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.31 Z=0.03[0m
+[0;32mI (54684) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.30 Z=0.03[0m
+[0;32mI (54884) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.32 Z=0.04[0m
+[0;32mI (55084) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.23 Z=0.03[0m
+[0;32mI (55284) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.29 Z=0.01[0m
+[0;32mI (55484) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.27 Z=0.02[0m
+[0;32mI (55684) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.28 Z=0.01[0m
+[0;32mI (55884) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.29 Z=0.03[0m
+[0;32mI (56084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.29 Z=0.02[0m
+[0;32mI (56284) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.32 Z=0.04[0m
+[0;32mI (56484) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.30 Z=0.01[0m
+[0;32mI (56684) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.30 Z=0.02[0m
+[0;32mI (56884) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.28 Z=0.01[0m
+[0;32mI (57084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.26 Z=0.03[0m
+[0;32mI (57284) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.29 Z=0.03[0m
+[0;32mI (57484) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.30 Z=0.02[0m
+[0;32mI (57684) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.30 Z=0.01[0m
+[0;32mI (57884) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.29 Z=0.04[0m
+[0;32mI (58084) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.28 Z=-0.00[0m
+[0;32mI (58284) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.30 Z=0.01[0m
+[0;32mI (58484) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.28 Z=0.05[0m
+[0;32mI (58684) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.28 Z=0.05[0m
+[0;32mI (58884) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.28 Z=0.03[0m
+[0;32mI (59084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.28 Z=0.03[0m
+[0;32mI (59284) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.28 Z=0.04[0m
+[0;32mI (59484) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.30 Z=0.03[0m
+[0;32mI (59684) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.28 Z=0.03[0m
+[0;32mI (59884) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.29 Z=0.02[0m
+[0;32mI (60084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.27 Z=0.01[0m
+[0;33mW (60274) SystemMonitor: [60s] Wi-Fi: not connected[0m
+[0;32mI (60274) SystemMonitor: [60s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (60274) SystemMonitor: [60s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (60284) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.29 Z=0.01[0m
+[0;32mI (60484) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.28 Z=0.04[0m
+[0;32mI (60684) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.29 Z=-0.00[0m
+[0;32mI (60884) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.27 Z=0.04[0m
+[0;32mI (61084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.30 Z=0.03[0m
+[0;32mI (61284) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.28 Z=0.00[0m
+[0;32mI (61484) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.30 Z=0.02[0m
+[0;32mI (61684) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.31 Z=0.37[0m
+[0;32mI (61884) SensorReadout: Accel [m/s²]: X=-0.65 Y=0.27 Z=0.13[0m
+[0;32mI (62084) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.22 Z=0.10[0m
+[0;32mI (62284) SensorReadout: Accel [m/s²]: X=-0.69 Y=0.30 Z=0.06[0m
+[0;32mI (62484) SensorReadout: Accel [m/s²]: X=-0.65 Y=0.32 Z=0.06[0m
+[0;32mI (62684) SensorReadout: Accel [m/s²]: X=-0.76 Y=0.30 Z=0.04[0m
+[0;32mI (62884) SensorReadout: Accel [m/s²]: X=-0.70 Y=0.31 Z=0.04[0m
+[0;32mI (63084) SensorReadout: Accel [m/s²]: X=-0.66 Y=0.26 Z=0.00[0m
+[0;32mI (63284) SensorReadout: Accel [m/s²]: X=-0.65 Y=0.29 Z=0.03[0m
+[0;32mI (63484) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.28 Z=0.03[0m
+[0;32mI (63684) SensorReadout: Accel [m/s²]: X=-0.63 Y=0.30 Z=0.05[0m
+[0;32mI (63884) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.30 Z=-0.02[0m
+[0;32mI (64084) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.32 Z=-0.10[0m
+[0;32mI (64284) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.02 Z=-0.21[0m
+[0;32mI (64484) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.11 Z=0.16[0m
+[0;32mI (64684) SensorReadout: Accel [m/s²]: X=-0.50 Y=0.28 Z=-0.19[0m
+[0;32mI (64884) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.33 Z=-0.20[0m
+[0;32mI (65084) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.19 Z=0.04[0m
+[0;32mI (65284) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.18 Z=0.05[0m
+[0;32mI (65484) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.21 Z=0.01[0m
+[0;32mI (65684) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.22 Z=0.03[0m
+[0;32mI (65884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.22 Z=-0.01[0m
+[0;32mI (66084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.20 Z=0.03[0m
+[0;32mI (66284) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.19 Z=-0.01[0m
+[0;32mI (66484) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.19 Z=0.02[0m
+[0;32mI (66684) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.23 Z=-0.00[0m
+[0;32mI (66884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.24 Z=0.03[0m
+[0;32mI (67084) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.24 Z=0.04[0m
+[0;32mI (67284) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.23 Z=0.05[0m
+[0;32mI (67484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.23 Z=0.03[0m
+[0;32mI (67684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.24 Z=0.04[0m
+[0;32mI (67884) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.21 Z=0.05[0m
+[0;32mI (68084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.28 Z=0.00[0m
+[0;32mI (68284) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.24 Z=-0.01[0m
+[0;32mI (68484) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.26 Z=-0.03[0m
+[0;32mI (68684) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.24 Z=0.04[0m
+[0;32mI (68884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.22 Z=0.04[0m
+[0;32mI (69084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.20 Z=0.05[0m
+[0;32mI (69284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.29 Z=0.05[0m
+[0;32mI (69484) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.24 Z=-0.01[0m
+[0;32mI (69684) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.31 Z=-0.02[0m
+[0;32mI (69884) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.27 Z=0.07[0m
+[0;32mI (70084) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.19 Z=-0.03[0m
+[0;33mW (70274) SystemMonitor: [70s] Wi-Fi: not connected[0m
+[0;32mI (70274) SystemMonitor: [70s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (70274) SystemMonitor: [70s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (70284) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.23 Z=0.06[0m
+[0;32mI (70484) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.29 Z=0.07[0m
+[0;32mI (70684) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.29 Z=0.02[0m
+[0;32mI (70884) SensorReadout: Accel [m/s²]: X=-0.51 Y=0.27 Z=0.04[0m
+[0;32mI (71084) SensorReadout: Accel [m/s²]: X=-0.49 Y=0.24 Z=0.02[0m
+[0;32mI (71284) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.27 Z=0.06[0m
+[0;32mI (71484) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.28 Z=-0.02[0m
+[0;32mI (71684) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.32 Z=0.08[0m
+[0;32mI (71884) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.20 Z=-0.10[0m
+[0;32mI (72084) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.29 Z=0.02[0m
+[0;32mI (72284) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.26 Z=-0.03[0m
+[0;32mI (72484) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.26 Z=-0.02[0m
+[0;32mI (72684) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.25 Z=0.03[0m
+[0;32mI (72884) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.28 Z=0.03[0m
+[0;32mI (73084) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.23 Z=0.03[0m
+[0;32mI (73284) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.25 Z=0.02[0m
+[0;32mI (73484) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.25 Z=0.03[0m
+[0;32mI (73684) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.30 Z=0.01[0m
+[0;32mI (73884) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.25 Z=0.02[0m
+[0;32mI (74084) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.27 Z=0.06[0m
+[0;32mI (74284) SensorReadout: Accel [m/s²]: X=-0.40 Y=0.24 Z=0.06[0m
+[0;32mI (74484) SensorReadout: Accel [m/s²]: X=-0.42 Y=0.30 Z=0.07[0m
+[0;32mI (74684) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.22 Z=0.06[0m
+[0;32mI (74884) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.26 Z=0.02[0m
+[0;32mI (75084) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.27 Z=0.02[0m
+[0;32mI (75284) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.30 Z=-0.01[0m
+[0;32mI (75484) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.23 Z=0.06[0m
+[0;32mI (75684) SensorReadout: Accel [m/s²]: X=-0.43 Y=0.29 Z=0.07[0m
+[0;32mI (75884) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.23 Z=0.09[0m
+[0;32mI (76084) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.29 Z=0.04[0m
+[0;32mI (76284) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.27 Z=0.03[0m
+[0;32mI (76484) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.27 Z=-0.01[0m
+[0;32mI (76684) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.26 Z=0.04[0m
+[0;32mI (76884) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.30 Z=-0.00[0m
+[0;32mI (77084) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.26 Z=0.03[0m
+[0;32mI (77284) SensorReadout: Accel [m/s²]: X=-0.41 Y=0.30 Z=0.11[0m
+[0;32mI (77484) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.28 Z=0.05[0m
+[0;32mI (77684) SensorReadout: Accel [m/s²]: X=-0.43 Y=0.31 Z=0.04[0m
+[0;32mI (77884) SensorReadout: Accel [m/s²]: X=-0.43 Y=0.27 Z=0.04[0m
+[0;32mI (78084) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.25 Z=0.10[0m
+[0;32mI (78284) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.23 Z=0.06[0m
+[0;32mI (78484) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.27 Z=0.05[0m
+[0;32mI (78684) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.32 Z=0.14[0m
+[0;32mI (78884) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.25 Z=-0.02[0m
+[0;32mI (79084) SensorReadout: Accel [m/s²]: X=-0.42 Y=0.35 Z=0.13[0m
+[0;32mI (79284) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.20 Z=-0.01[0m
+[0;32mI (79484) SensorReadout: Accel [m/s²]: X=-0.40 Y=0.34 Z=0.02[0m
+[0;32mI (79684) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.25 Z=-0.00[0m
+[0;32mI (79884) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.30 Z=0.02[0m
+[0;32mI (80084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.26 Z=0.00[0m
+[0;33mW (80274) SystemMonitor: [80s] Wi-Fi: not connected[0m
+[0;32mI (80274) SystemMonitor: [80s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (80274) SystemMonitor: [80s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (80284) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.24 Z=0.02[0m
+[0;32mI (80484) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.27 Z=0.05[0m
+[0;32mI (80684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.23 Z=-0.02[0m
+[0;32mI (80884) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.26 Z=0.07[0m
+[0;32mI (81084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.25 Z=0.01[0m
+[0;32mI (81284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.24 Z=0.09[0m
+[0;32mI (81484) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.33 Z=-0.07[0m
+[0;32mI (81684) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.21 Z=-0.05[0m
+[0;32mI (81884) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.27 Z=0.03[0m
+[0;32mI (82084) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.29 Z=0.00[0m
+[0;32mI (82284) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.26 Z=0.03[0m
+[0;32mI (82484) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.27 Z=0.04[0m
+[0;32mI (82684) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.31 Z=0.00[0m
+[0;32mI (82884) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.28 Z=0.06[0m
+[0;32mI (83084) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.26 Z=0.02[0m
+[0;32mI (83284) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.26 Z=0.03[0m
+[0;32mI (83484) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.28 Z=0.05[0m
+[0;32mI (83684) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.29 Z=0.05[0m
+[0;32mI (83884) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.24 Z=0.03[0m
+[0;32mI (84084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.30 Z=0.05[0m
+[0;32mI (84284) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.27 Z=0.06[0m
+[0;32mI (84484) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.27 Z=0.01[0m
+[0;32mI (84684) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.28 Z=0.04[0m
+[0;32mI (84884) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.26 Z=0.04[0m
+[0;32mI (85084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.25 Z=0.03[0m
+[0;32mI (85284) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.28 Z=0.04[0m
+[0;32mI (85484) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.27 Z=-0.03[0m
+[0;32mI (85684) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.20 Z=0.07[0m
+[0;32mI (85884) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.30 Z=0.02[0m
+[0;32mI (86084) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.22 Z=0.05[0m
+[0;32mI (86284) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.30 Z=0.01[0m
+[0;32mI (86484) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.25 Z=0.17[0m
+[0;32mI (86684) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.29 Z=-0.13[0m
+[0;32mI (86884) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.28 Z=0.04[0m
+[0;32mI (87084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.25 Z=-0.00[0m
+[0;32mI (87284) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.28 Z=0.00[0m
+[0;32mI (87484) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.29 Z=0.03[0m
+[0;32mI (87684) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.21 Z=0.05[0m
+[0;32mI (87884) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.32 Z=0.04[0m
+[0;32mI (88084) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.22 Z=0.07[0m
+[0;32mI (88284) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.26 Z=0.11[0m
+[0;32mI (88484) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.25 Z=0.01[0m
+[0;32mI (88684) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.26 Z=0.05[0m
+[0;32mI (88884) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.25 Z=0.04[0m
+[0;32mI (89084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.30 Z=-0.01[0m
+[0;32mI (89284) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.28 Z=0.03[0m
+[0;32mI (89484) SensorReadout: Accel [m/s²]: X=-0.38 Y=0.26 Z=0.06[0m
+[0;32mI (89684) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.26 Z=0.01[0m
+[0;32mI (89884) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.26 Z=0.05[0m
+[0;32mI (90084) SensorReadout: Accel [m/s²]: X=-0.34 Y=0.28 Z=0.00[0m
+[0;33mW (90274) SystemMonitor: [90s] Wi-Fi: not connected[0m
+[0;32mI (90274) SystemMonitor: [90s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (90274) SystemMonitor: [90s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (90284) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.27 Z=-0.02[0m
+[0;32mI (90484) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.24 Z=-0.02[0m
+[0;32mI (90684) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.02 Z=0.02[0m
+[0;32mI (90884) SensorReadout: Accel [m/s²]: X=-0.42 Y=0.14 Z=-0.24[0m
+[0;32mI (91084) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.15 Z=-0.07[0m
+[0;32mI (91284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.08 Z=0.06[0m
+[0;32mI (91484) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.08 Z=0.04[0m
+[0;32mI (91684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.10 Z=-0.02[0m
+[0;32mI (91884) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.08 Z=0.00[0m
+[0;32mI (92084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.12 Z=0.00[0m
+[0;32mI (92284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.08 Z=-0.00[0m
+[0;32mI (92484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.02[0m
+[0;32mI (92684) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.10 Z=-0.03[0m
+[0;32mI (92884) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.11 Z=0.03[0m
+[0;32mI (93084) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.09 Z=-0.00[0m
+[0;32mI (93284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=-0.03[0m
+[0;32mI (93484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=-0.01[0m
+[0;32mI (93684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.09 Z=-0.00[0m
+[0;32mI (93884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.10 Z=-0.01[0m
+[0;32mI (94084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.10 Z=0.01[0m
+[0;32mI (94284) SensorReadout: Accel [m/s²]: X=-0.07 Y=0.07 Z=0.04[0m
+[0;32mI (94484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.24 Z=-0.00[0m
+[0;32mI (94684) SensorReadout: Accel [m/s²]: X=0.09 Y=0.09 Z=0.17[0m
+[0;32mI (94884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.20 Z=0.01[0m
+[0;32mI (95084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.03 Z=0.01[0m
+[0;32mI (95284) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.12 Z=-0.06[0m
+[0;32mI (95484) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.16 Z=-0.01[0m
+[0;32mI (95684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=-0.01[0m
+[0;32mI (95884) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.10 Z=-0.01[0m
+[0;32mI (96084) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.03 Z=0.04[0m
+[0;32mI (96284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.18 Z=0.03[0m
+[0;32mI (96484) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.15 Z=-0.01[0m
+[0;32mI (96684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.17 Z=0.01[0m
+[0;32mI (96884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.08 Z=0.01[0m
+[0;32mI (97084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.14 Z=0.02[0m
+[0;32mI (97284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=0.04[0m
+[0;32mI (97484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.13 Z=0.02[0m
+[0;32mI (97684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.15 Z=0.00[0m
+[0;32mI (97884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.12 Z=-0.02[0m
+[0;32mI (98084) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.11 Z=0.03[0m
+[0;32mI (98284) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.12 Z=0.02[0m
+[0;32mI (98484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.15 Z=0.02[0m
+[0;32mI (98684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.16 Z=0.01[0m
+[0;32mI (98884) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.12 Z=0.01[0m
+[0;32mI (99084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=0.04[0m
+[0;32mI (99284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.15 Z=0.05[0m
+[0;32mI (99484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=0.01[0m
+[0;32mI (99684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.09 Z=0.01[0m
+[0;32mI (99884) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.15 Z=0.01[0m
+[0;32mI (100084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=0.03[0m
+[0;33mW (100274) SystemMonitor: [100s] Wi-Fi: not connected[0m
+[0;32mI (100274) SystemMonitor: [100s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (100274) SystemMonitor: [100s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (100284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.12 Z=-0.01[0m
+[0;32mI (100484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=0.03[0m
+[0;32mI (100684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.13 Z=-0.02[0m
+[0;32mI (100884) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.13 Z=-0.01[0m
+[0;32mI (101084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.11 Z=-0.02[0m
+[0;32mI (101284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=0.03[0m
+[0;32mI (101484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.12 Z=-0.01[0m
+[0;32mI (101684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.02[0m
+[0;32mI (101884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.15 Z=0.00[0m
+[0;32mI (102084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.11 Z=-0.00[0m
+[0;32mI (102284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.15 Z=0.01[0m
+[0;32mI (102484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.01[0m
+[0;32mI (102684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.13 Z=-0.02[0m
+[0;32mI (102884) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.13 Z=0.01[0m
+[0;32mI (103084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.12 Z=0.01[0m
+[0;32mI (103284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.15 Z=0.01[0m
+[0;32mI (103484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.15 Z=0.05[0m
+[0;32mI (103684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.03[0m
+[0;32mI (103884) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.11 Z=0.00[0m
+[0;32mI (104084) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.14 Z=0.01[0m
+[0;32mI (104284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.01[0m
+[0;32mI (104484) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.15 Z=0.03[0m
+[0;32mI (104684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=-0.01[0m
+[0;32mI (104884) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.12 Z=0.05[0m
+[0;32mI (105084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.14 Z=0.01[0m
+[0;32mI (105284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=0.01[0m
+[0;32mI (105484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=0.03[0m
+[0;32mI (105684) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.12 Z=0.00[0m
+[0;32mI (105884) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.14 Z=0.05[0m
+[0;32mI (106084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=0.02[0m
+[0;32mI (106284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.14 Z=0.01[0m
+[0;32mI (106484) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.13 Z=0.04[0m
+[0;32mI (106684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=0.04[0m
+[0;32mI (106884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.14 Z=-0.02[0m
+[0;32mI (107084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.12 Z=-0.00[0m
+[0;32mI (107284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.11 Z=-0.02[0m
+[0;32mI (107484) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.10 Z=0.02[0m
+[0;32mI (107684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.03[0m
+[0;32mI (107884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.12 Z=0.02[0m
+[0;32mI (108084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.17 Z=0.01[0m
+[0;32mI (108284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.11 Z=-0.01[0m
+[0;32mI (108484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.14 Z=-0.02[0m
+[0;32mI (108684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.16 Z=0.00[0m
+[0;32mI (108884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.10 Z=-0.01[0m
+[0;32mI (109084) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.13 Z=-0.00[0m
+[0;32mI (109284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.16 Z=0.00[0m
+[0;32mI (109484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.20 Z=-0.02[0m
+[0;32mI (109684) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=-0.00[0m
+[0;32mI (109884) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=-0.01[0m
+[0;32mI (110084) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.11 Z=-0.01[0m
+[0;33mW (110274) SystemMonitor: [110s] Wi-Fi: not connected[0m
+[0;32mI (110274) SystemMonitor: [110s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (110274) SystemMonitor: [110s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (110284) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.12 Z=0.17[0m
+[0;32mI (110484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.39 Z=0.11[0m
+[0;32mI (110684) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.30 Z=0.05[0m
+[0;32mI (110884) SensorReadout: Accel [m/s²]: X=-0.66 Y=0.38 Z=0.01[0m
+[0;32mI (111084) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.25 Z=0.02[0m
+[0;32mI (111284) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.34 Z=0.02[0m
+[0;32mI (111484) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.36 Z=0.04[0m
+[0;32mI (111684) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.38 Z=0.07[0m
+[0;32mI (111884) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.32 Z=0.06[0m
+[0;32mI (112084) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.34 Z=0.03[0m
+[0;32mI (112284) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.35 Z=0.04[0m
+[0;32mI (112484) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.35 Z=0.04[0m
+[0;32mI (112684) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.32 Z=-0.01[0m
+[0;32mI (112884) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.35 Z=0.03[0m
+[0;32mI (113084) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.34 Z=-0.01[0m
+[0;32mI (113284) SensorReadout: Accel [m/s²]: X=-0.67 Y=0.38 Z=0.06[0m
+[0;32mI (113484) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.34 Z=0.05[0m
+[0;32mI (113684) SensorReadout: Accel [m/s²]: X=-0.64 Y=0.31 Z=0.04[0m
+[0;32mI (113884) SensorReadout: Accel [m/s²]: X=-0.64 Y=0.39 Z=0.06[0m
+[0;32mI (114084) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.32 Z=0.06[0m
+[0;32mI (114284) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.36 Z=0.05[0m
+[0;32mI (114484) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.32 Z=0.07[0m
+[0;32mI (114684) SensorReadout: Accel [m/s²]: X=-0.64 Y=0.34 Z=0.01[0m
+[0;32mI (114884) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.34 Z=0.01[0m
+[0;32mI (115084) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.31 Z=0.01[0m
+[0;32mI (115284) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.32 Z=0.03[0m
+[0;32mI (115484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.32 Z=0.02[0m
+[0;32mI (115684) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.35 Z=0.02[0m
+[0;32mI (115884) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.35 Z=0.03[0m
+[0;32mI (116084) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.37 Z=0.07[0m
+[0;32mI (116284) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.33 Z=0.02[0m
+[0;32mI (116484) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.36 Z=0.03[0m
+[0;32mI (116684) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.35 Z=0.06[0m
+[0;32mI (116884) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.34 Z=0.06[0m
+[0;32mI (117084) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.33 Z=0.06[0m
+[0;32mI (117284) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.35 Z=0.14[0m
+[0;32mI (117484) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.31 Z=0.07[0m
+[0;32mI (117684) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.33 Z=0.00[0m
+[0;32mI (117884) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.36 Z=0.06[0m
+[0;32mI (118084) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.36 Z=0.03[0m
+[0;32mI (118284) SensorReadout: Accel [m/s²]: X=-0.69 Y=0.23 Z=-0.04[0m
+[0;32mI (118484) SensorReadout: Accel [m/s²]: X=-0.64 Y=0.35 Z=0.00[0m
+[0;32mI (118684) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.34 Z=0.01[0m
+[0;32mI (118884) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.34 Z=0.01[0m
+[0;32mI (119084) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.34 Z=0.05[0m
+[0;32mI (119284) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.31 Z=0.03[0m
+[0;32mI (119484) SensorReadout: Accel [m/s²]: X=-0.59 Y=0.35 Z=0.02[0m
+[0;32mI (119684) SensorReadout: Accel [m/s²]: X=-0.59 Y=0.36 Z=0.06[0m
+[0;32mI (119884) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.32 Z=0.04[0m
+[0;32mI (120084) SensorReadout: Accel [m/s²]: X=-0.65 Y=0.38 Z=0.06[0m
+[0;33mW (120274) SystemMonitor: [120s] Wi-Fi: not connected[0m
+[0;32mI (120274) SystemMonitor: [120s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (120274) SystemMonitor: [120s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (120284) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.33 Z=0.03[0m
+[0;32mI (120484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.35 Z=0.04[0m
+[0;32mI (120684) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.33 Z=0.04[0m
+[0;32mI (120884) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.35 Z=0.02[0m
+[0;32mI (121084) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.38 Z=0.02[0m
+[0;32mI (121284) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.38 Z=0.02[0m
+[0;32mI (121484) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.34 Z=0.07[0m
+[0;32mI (121684) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.33 Z=0.06[0m
+[0;32mI (121884) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.34 Z=0.03[0m
+[0;32mI (122084) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.35 Z=0.03[0m
+[0;32mI (122284) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.35 Z=0.07[0m
+[0;32mI (122484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.36 Z=0.06[0m
+[0;32mI (122684) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.33 Z=0.06[0m
+[0;32mI (122884) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.34 Z=-0.00[0m
+[0;32mI (123084) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.35 Z=0.03[0m
+[0;32mI (123284) SensorReadout: Accel [m/s²]: X=-0.51 Y=0.34 Z=0.04[0m
+[0;32mI (123484) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.32 Z=0.06[0m
+[0;32mI (123684) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.34 Z=-0.01[0m
+[0;32mI (123884) SensorReadout: Accel [m/s²]: X=-0.51 Y=0.36 Z=0.03[0m
+[0;32mI (124084) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.35 Z=0.04[0m
+[0;32mI (124284) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.34 Z=0.05[0m
+[0;32mI (124484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.36 Z=0.04[0m
+[0;32mI (124684) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.33 Z=0.05[0m
+[0;32mI (124884) SensorReadout: Accel [m/s²]: X=-0.59 Y=0.36 Z=0.07[0m
+[0;32mI (125084) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.33 Z=0.03[0m
+[0;32mI (125284) SensorReadout: Accel [m/s²]: X=-0.59 Y=0.40 Z=0.06[0m
+[0;32mI (125484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.29 Z=0.00[0m
+[0;32mI (125684) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.39 Z=0.02[0m
+[0;32mI (125884) SensorReadout: Accel [m/s²]: X=-0.48 Y=0.33 Z=0.06[0m
+[0;32mI (126084) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.36 Z=0.02[0m
+[0;32mI (126284) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.30 Z=0.05[0m
+[0;32mI (126484) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.35 Z=0.03[0m
+[0;32mI (126684) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.38 Z=-0.05[0m
+[0;32mI (126884) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.41 Z=0.05[0m
+[0;32mI (127084) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.38 Z=-0.02[0m
+[0;32mI (127284) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.34 Z=0.02[0m
+[0;32mI (127484) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.30 Z=0.07[0m
+[0;32mI (127684) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.35 Z=0.03[0m
+[0;32mI (127884) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.36 Z=0.07[0m
+[0;32mI (128084) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.37 Z=0.02[0m
+[0;32mI (128284) SensorReadout: Accel [m/s²]: X=-0.51 Y=0.31 Z=0.06[0m
+[0;32mI (128484) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.34 Z=0.01[0m
+[0;32mI (128684) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.36 Z=0.01[0m
+[0;32mI (128884) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.36 Z=0.07[0m
+[0;32mI (129084) SensorReadout: Accel [m/s²]: X=-0.50 Y=0.34 Z=0.05[0m
+[0;32mI (129284) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.36 Z=0.08[0m
+[0;32mI (129484) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.36 Z=0.05[0m
+[0;32mI (129684) SensorReadout: Accel [m/s²]: X=-0.60 Y=0.32 Z=0.12[0m
+[0;32mI (129884) SensorReadout: Accel [m/s²]: X=-0.59 Y=0.34 Z=0.03[0m
+[0;32mI (130084) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.37 Z=0.02[0m
+[0;33mW (130274) SystemMonitor: [130s] Wi-Fi: not connected[0m
+[0;32mI (130274) SystemMonitor: [130s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (130274) SystemMonitor: [130s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (130284) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.34 Z=0.11[0m
+[0;32mI (130484) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.33 Z=0.07[0m
+[0;32mI (130684) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.40 Z=0.06[0m
+[0;32mI (130884) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.32 Z=0.03[0m
+[0;32mI (131084) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.36 Z=0.04[0m
+[0;32mI (131284) SensorReadout: Accel [m/s²]: X=-0.57 Y=0.32 Z=0.05[0m
+[0;32mI (131484) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.34 Z=0.01[0m
+[0;32mI (131684) SensorReadout: Accel [m/s²]: X=-0.56 Y=0.39 Z=0.11[0m
+[0;32mI (131884) SensorReadout: Accel [m/s²]: X=-0.58 Y=0.30 Z=-0.01[0m
+[0;32mI (132084) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.30 Z=0.04[0m
+[0;32mI (132284) SensorReadout: Accel [m/s²]: X=-0.66 Y=0.35 Z=0.05[0m
+[0;32mI (132484) SensorReadout: Accel [m/s²]: X=-0.55 Y=0.31 Z=0.03[0m
+[0;32mI (132684) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.35 Z=0.06[0m
+[0;32mI (132884) SensorReadout: Accel [m/s²]: X=-0.62 Y=0.33 Z=0.04[0m
+[0;32mI (133084) SensorReadout: Accel [m/s²]: X=-0.61 Y=0.34 Z=0.06[0m
+[0;32mI (133284) SensorReadout: Accel [m/s²]: X=-0.63 Y=0.31 Z=-0.04[0m
+[0;32mI (133484) SensorReadout: Accel [m/s²]: X=-0.45 Y=0.31 Z=-0.12[0m
+[0;32mI (133684) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.18 Z=0.06[0m
+[0;32mI (133884) SensorReadout: Accel [m/s²]: X=-0.05 Y=0.02 Z=0.01[0m
+[0;32mI (134084) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.13 Z=0.00[0m
+[0;32mI (134284) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.04 Z=-0.01[0m
+[0;32mI (134484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.13 Z=-0.03[0m
+[0;32mI (134684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.02 Z=0.07[0m
+[0;32mI (134884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.09 Z=-0.02[0m
+[0;32mI (135084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.12 Z=0.04[0m
+[0;32mI (135284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.07 Z=0.01[0m
+[0;32mI (135484) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.11 Z=0.04[0m
+[0;32mI (135684) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.10 Z=0.04[0m
+[0;32mI (135884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.11 Z=-0.01[0m
+[0;32mI (136084) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.11 Z=-0.03[0m
+[0;32mI (136284) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.08 Z=-0.03[0m
+[0;32mI (136484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.17 Z=0.01[0m
+[0;32mI (136684) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=0.02[0m
+[0;32mI (136884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=0.03[0m
+[0;32mI (137084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.11 Z=0.01[0m
+[0;32mI (137284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.09 Z=-0.02[0m
+[0;32mI (137484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.10 Z=-0.00[0m
+[0;32mI (137684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.12 Z=-0.00[0m
+[0;32mI (137884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.09 Z=0.02[0m
+[0;32mI (138084) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.08 Z=-0.04[0m
+[0;32mI (138284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=0.05[0m
+[0;32mI (138484) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.10 Z=-0.01[0m
+[0;32mI (138684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=-0.00[0m
+[0;32mI (138884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.07 Z=0.04[0m
+[0;32mI (139084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.16 Z=0.05[0m
+[0;32mI (139284) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.16 Z=0.04[0m
+[0;32mI (139484) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.14 Z=0.05[0m
+[0;32mI (139684) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.18 Z=0.03[0m
+[0;32mI (139884) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.17 Z=0.04[0m
+[0;32mI (140084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.12 Z=-0.02[0m
+[0;33mW (140274) SystemMonitor: [140s] Wi-Fi: not connected[0m
+[0;32mI (140274) SystemMonitor: [140s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (140274) SystemMonitor: [140s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (140284) SensorReadout: Accel [m/s²]: X=-0.36 Y=0.27 Z=-0.01[0m
+[0;32mI (140484) SensorReadout: Accel [m/s²]: X=-0.50 Y=0.34 Z=0.00[0m
+[0;32mI (140684) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.37 Z=0.08[0m
+[0;32mI (140884) SensorReadout: Accel [m/s²]: X=-0.48 Y=0.27 Z=0.05[0m
+[0;32mI (141084) SensorReadout: Accel [m/s²]: X=-0.49 Y=0.37 Z=-0.02[0m
+[0;32mI (141284) SensorReadout: Accel [m/s²]: X=-0.43 Y=0.34 Z=0.12[0m
+[0;32mI (141484) SensorReadout: Accel [m/s²]: X=-0.54 Y=0.33 Z=0.02[0m
+[0;32mI (141684) SensorReadout: Accel [m/s²]: X=-0.40 Y=0.36 Z=0.10[0m
+[0;32mI (141884) SensorReadout: Accel [m/s²]: X=-0.52 Y=0.39 Z=0.06[0m
+[0;32mI (142084) SensorReadout: Accel [m/s²]: X=-0.53 Y=0.39 Z=0.07[0m
+[0;32mI (142284) SensorReadout: Accel [m/s²]: X=-0.47 Y=0.30 Z=0.05[0m
+[0;32mI (142484) SensorReadout: Accel [m/s²]: X=-0.39 Y=0.27 Z=0.02[0m
+[0;32mI (142684) SensorReadout: Accel [m/s²]: X=-0.04 Y=0.04 Z=0.01[0m
+[0;32mI (142884) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.22 Z=0.04[0m
+[0;32mI (143084) SensorReadout: Accel [m/s²]: X=-0.07 Y=0.12 Z=0.10[0m
+[0;32mI (143284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.10 Z=0.01[0m
+[0;32mI (143484) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.15 Z=-0.04[0m
+[0;32mI (143684) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.12 Z=0.00[0m
+[0;32mI (143884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.10 Z=0.01[0m
+[0;32mI (144084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=-0.01[0m
+[0;32mI (144284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.18 Z=-0.04[0m
+[0;32mI (144484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.10 Z=0.01[0m
+[0;32mI (144684) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.16 Z=0.02[0m
+[0;32mI (144884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.10 Z=0.04[0m
+[0;32mI (145084) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.14 Z=0.02[0m
+[0;32mI (145284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.12 Z=0.01[0m
+[0;32mI (145484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.12 Z=0.00[0m
+[0;32mI (145684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.14 Z=0.02[0m
+[0;32mI (145884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.11 Z=0.00[0m
+[0;32mI (146084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=0.04[0m
+[0;32mI (146284) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.17 Z=0.02[0m
+[0;32mI (146484) SensorReadout: Accel [m/s²]: X=-0.09 Y=0.06 Z=-0.04[0m
+[0;32mI (146684) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.17 Z=-0.03[0m
+[0;32mI (146884) SensorReadout: Accel [m/s²]: X=-0.08 Y=0.07 Z=0.28[0m
+[0;32mI (147084) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.14 Z=-0.03[0m
+[0;32mI (147284) SensorReadout: Accel [m/s²]: X=-0.09 Y=0.11 Z=-0.03[0m
+[0;32mI (147484) SensorReadout: Accel [m/s²]: X=-0.09 Y=0.13 Z=-0.01[0m
+[0;32mI (147684) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.11 Z=-0.02[0m
+[0;32mI (147884) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.18 Z=0.01[0m
+[0;32mI (148084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.22 Z=0.01[0m
+[0;32mI (148284) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.11 Z=0.02[0m
+[0;32mI (148484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.12 Z=0.03[0m
+[0;32mI (148684) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.10 Z=0.05[0m
+[0;32mI (148884) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.11 Z=-0.03[0m
+[0;32mI (149084) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.17 Z=0.06[0m
+[0;32mI (149284) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.13 Z=0.00[0m
+[0;32mI (149484) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.15 Z=0.04[0m
+[0;32mI (149684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.06 Z=-0.00[0m
+[0;32mI (149884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.16 Z=0.02[0m
+[0;32mI (150084) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.09 Z=-0.02[0m
+[0;33mW (150274) SystemMonitor: [150s] Wi-Fi: not connected[0m
+[0;32mI (150274) SystemMonitor: [150s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (150274) SystemMonitor: [150s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (150284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.16 Z=-0.00[0m
+[0;32mI (150484) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.13 Z=0.02[0m
+[0;32mI (150684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.07 Z=-0.02[0m
+[0;32mI (150884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.13 Z=0.02[0m
+[0;32mI (151084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.14 Z=-0.03[0m
+[0;32mI (151284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=-0.03[0m
+[0;32mI (151484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.13 Z=0.03[0m
+[0;32mI (151684) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.05 Z=-0.02[0m
+[0;32mI (151884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.15 Z=-0.00[0m
+[0;32mI (152084) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.13 Z=0.02[0m
+[0;32mI (152284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.18 Z=0.03[0m
+[0;32mI (152484) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.06 Z=-0.01[0m
+[0;32mI (152684) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.14 Z=0.01[0m
+[0;32mI (152884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.11 Z=-0.03[0m
+[0;32mI (153084) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.07 Z=0.04[0m
+[0;32mI (153284) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.15 Z=-0.02[0m
+[0;32mI (153484) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.16 Z=-0.01[0m
+[0;32mI (153684) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.24 Z=-0.03[0m
+[0;32mI (153884) SensorReadout: Accel [m/s²]: X=-0.31 Y=0.30 Z=-0.06[0m
+[0;32mI (154084) SensorReadout: Accel [m/s²]: X=-0.28 Y=0.09 Z=0.08[0m
+[0;32mI (154284) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.20 Z=0.09[0m
+[0;32mI (154484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.22 Z=-0.04[0m
+[0;32mI (154684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.18 Z=-0.05[0m
+[0;32mI (154884) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.08 Z=-0.04[0m
+[0;32mI (155084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.20 Z=-0.10[0m
+[0;32mI (155284) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.14 Z=-0.09[0m
+[0;32mI (155484) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.18 Z=0.04[0m
+[0;32mI (155684) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.18 Z=-0.02[0m
+[0;32mI (155884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.15 Z=0.07[0m
+[0;32mI (156084) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.17 Z=0.07[0m
+[0;32mI (156284) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.19 Z=0.01[0m
+[0;32mI (156484) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.26 Z=-0.04[0m
+[0;32mI (156684) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.29 Z=-0.08[0m
+[0;32mI (156884) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.25 Z=0.04[0m
+[0;32mI (157084) SensorReadout: Accel [m/s²]: X=-0.29 Y=0.25 Z=-0.03[0m
+[0;32mI (157284) SensorReadout: Accel [m/s²]: X=-0.37 Y=0.30 Z=0.04[0m
+[0;32mI (157484) SensorReadout: Accel [m/s²]: X=-0.35 Y=0.16 Z=0.11[0m
+[0;32mI (157684) SensorReadout: Accel [m/s²]: X=-0.32 Y=0.21 Z=0.10[0m
+[0;32mI (157884) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.21 Z=0.06[0m
+[0;32mI (158084) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.18 Z=0.03[0m
+[0;32mI (158284) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.18 Z=0.00[0m
+[0;32mI (158484) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.14 Z=-0.04[0m
+[0;32mI (158684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.20 Z=0.04[0m
+[0;32mI (158884) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.14 Z=0.01[0m
+[0;32mI (159084) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.15 Z=-0.01[0m
+[0;32mI (159284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.16 Z=-0.02[0m
+[0;32mI (159484) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.26 Z=-0.02[0m
+[0;32mI (159684) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.16 Z=0.03[0m
+[0;32mI (159884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.10 Z=0.02[0m
+[0;32mI (160084) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.09 Z=0.06[0m
+[0;33mW (160274) SystemMonitor: [160s] Wi-Fi: not connected[0m
+[0;32mI (160274) SystemMonitor: [160s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (160274) SystemMonitor: [160s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (160284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.08 Z=0.03[0m
+[0;32mI (160484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.11 Z=0.01[0m
+[0;32mI (160684) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.10 Z=-0.02[0m
+[0;32mI (160884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.07 Z=-0.01[0m
+[0;32mI (161084) SensorReadout: Accel [m/s²]: X=-0.27 Y=0.09 Z=-0.07[0m
+[0;32mI (161284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.12 Z=0.03[0m
+[0;32mI (161484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.11 Z=0.06[0m
+[0;32mI (161684) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.14 Z=0.03[0m
+[0;32mI (161884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.12 Z=0.08[0m
+[0;32mI (162084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.10 Z=-0.03[0m
+[0;32mI (162284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.26 Z=-0.07[0m
+[0;32mI (162484) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.09 Z=0.03[0m
+[0;32mI (162684) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.12 Z=-0.02[0m
+[0;32mI (162884) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.20 Z=0.03[0m
+[0;32mI (163084) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.13 Z=-0.00[0m
+[0;32mI (163284) SensorReadout: Accel [m/s²]: X=-0.33 Y=0.24 Z=-0.04[0m
+[0;32mI (163484) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.17 Z=-0.02[0m
+[0;32mI (163684) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.12 Z=0.05[0m
+[0;32mI (163884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.06 Z=0.07[0m
+[0;32mI (164084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.13 Z=-0.00[0m
+[0;32mI (164284) SensorReadout: Accel [m/s²]: X=-0.09 Y=0.06 Z=0.02[0m
+[0;32mI (164484) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.05 Z=-0.05[0m
+[0;32mI (164684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.05 Z=0.02[0m
+[0;32mI (164884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.10 Z=-0.00[0m
+[0;32mI (165084) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.12 Z=-0.00[0m
+[0;32mI (165284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.13 Z=0.02[0m
+[0;32mI (165484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.07 Z=-0.00[0m
+[0;32mI (165684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=-0.06[0m
+[0;32mI (165884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=0.05[0m
+[0;32mI (166084) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.12 Z=0.07[0m
+[0;32mI (166284) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.18 Z=0.07[0m
+[0;32mI (166484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.09 Z=0.03[0m
+[0;32mI (166684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=0.02[0m
+[0;32mI (166884) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.10 Z=-0.02[0m
+[0;32mI (167084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=-0.03[0m
+[0;32mI (167284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.08 Z=0.01[0m
+[0;32mI (167484) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=-0.01[0m
+[0;32mI (167684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.07 Z=-0.00[0m
+[0;32mI (167884) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.09 Z=0.01[0m
+[0;32mI (168084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.11 Z=0.03[0m
+[0;32mI (168284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.07 Z=-0.04[0m
+[0;32mI (168484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.02[0m
+[0;32mI (168684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.08 Z=0.00[0m
+[0;32mI (168884) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.13 Z=-0.01[0m
+[0;32mI (169084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.09 Z=-0.01[0m
+[0;32mI (169284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=0.05[0m
+[0;32mI (169484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.09 Z=0.01[0m
+[0;32mI (169684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.10 Z=-0.02[0m
+[0;32mI (169884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.10 Z=-0.00[0m
+[0;32mI (170084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=0.02[0m
+[0;33mW (170274) SystemMonitor: [170s] Wi-Fi: not connected[0m
+[0;32mI (170274) SystemMonitor: [170s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (170274) SystemMonitor: [170s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (170284) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.07 Z=0.02[0m
+[0;32mI (170484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.03 Z=-0.04[0m
+[0;32mI (170684) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.14 Z=0.00[0m
+[0;32mI (170884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.09 Z=0.02[0m
+[0;32mI (171084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=-0.01[0m
+[0;32mI (171284) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.11 Z=-0.07[0m
+[0;32mI (171484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.02 Z=-0.04[0m
+[0;32mI (171684) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.15 Z=0.03[0m
+[0;32mI (171884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.08 Z=0.12[0m
+[0;32mI (172084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=0.00[0m
+[0;32mI (172284) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.06 Z=0.02[0m
+[0;32mI (172484) SensorReadout: Accel [m/s²]: X=-0.25 Y=0.25 Z=-0.03[0m
+[0;32mI (172684) SensorReadout: Accel [m/s²]: X=-0.23 Y=0.15 Z=0.04[0m
+[0;32mI (172884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.18 Z=0.05[0m
+[0;32mI (173084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.10[0m
+[0;32mI (173284) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.20 Z=0.03[0m
+[0;32mI (173484) SensorReadout: Accel [m/s²]: X=-0.26 Y=0.19 Z=0.06[0m
+[0;32mI (173684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.07 Z=-0.01[0m
+[0;32mI (173884) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.14 Z=-0.02[0m
+[0;32mI (174084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.14 Z=0.07[0m
+[0;32mI (174284) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.13 Z=-0.06[0m
+[0;32mI (174484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.06 Z=-0.01[0m
+[0;32mI (174684) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.06 Z=0.00[0m
+[0;32mI (174884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.17 Z=0.04[0m
+[0;32mI (175084) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.11 Z=0.02[0m
+[0;32mI (175284) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.10 Z=0.03[0m
+[0;32mI (175484) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=-0.01[0m
+[0;32mI (175684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=-0.04[0m
+[0;32mI (175884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.09 Z=-0.02[0m
+[0;32mI (176084) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.13 Z=0.03[0m
+[0;32mI (176284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.09 Z=-0.01[0m
+[0;32mI (176484) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.15 Z=-0.00[0m
+[0;32mI (176684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=-0.00[0m
+[0;32mI (176884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.10 Z=0.04[0m
+[0;32mI (177084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.07 Z=-0.07[0m
+[0;32mI (177284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.11 Z=-0.00[0m
+[0;32mI (177484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=-0.01[0m
+[0;32mI (177684) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.13 Z=-0.01[0m
+[0;32mI (177884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.10 Z=-0.03[0m
+[0;32mI (178084) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.10 Z=0.02[0m
+[0;32mI (178284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.08 Z=-0.01[0m
+[0;32mI (178484) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.12 Z=0.04[0m
+[0;32mI (178684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.09 Z=-0.00[0m
+[0;32mI (178884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.08 Z=0.02[0m
+[0;32mI (179084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.09 Z=-0.00[0m
+[0;32mI (179284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.07 Z=-0.05[0m
+[0;32mI (179484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.08 Z=0.01[0m
+[0;32mI (179684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.10 Z=-0.01[0m
+[0;32mI (179884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.10 Z=0.01[0m
+[0;32mI (180084) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=0.00[0m
+[0;33mW (180274) SystemMonitor: [180s] Wi-Fi: not connected[0m
+[0;32mI (180274) SystemMonitor: [180s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (180274) SystemMonitor: [180s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (180284) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.11 Z=0.03[0m
+[0;32mI (180484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.10 Z=0.07[0m
+[0;32mI (180684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=0.02[0m
+[0;32mI (180884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=0.03[0m
+[0;32mI (181084) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.10 Z=-0.02[0m
+[0;32mI (181284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.07 Z=-0.01[0m
+[0;32mI (181484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.14 Z=0.02[0m
+[0;32mI (181684) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.12 Z=-0.00[0m
+[0;32mI (181884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.11 Z=0.00[0m
+[0;32mI (182084) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.06 Z=-0.04[0m
+[0;32mI (182284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.03 Z=-0.01[0m
+[0;32mI (182484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.09 Z=0.02[0m
+[0;32mI (182684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=0.04[0m
+[0;32mI (182884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.10 Z=-0.00[0m
+[0;32mI (183084) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.06 Z=-0.02[0m
+[0;32mI (183284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.12 Z=-0.01[0m
+[0;32mI (183484) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=0.05[0m
+[0;32mI (183684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.05 Z=-0.02[0m
+[0;32mI (183884) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.12 Z=-0.04[0m
+[0;32mI (184084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.17 Z=0.05[0m
+[0;32mI (184284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.16 Z=-0.01[0m
+[0;32mI (184484) SensorReadout: Accel [m/s²]: X=-0.18 Y=0.06 Z=0.00[0m
+[0;32mI (184684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.15 Z=0.05[0m
+[0;32mI (184884) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.16 Z=-0.01[0m
+[0;32mI (185084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.09 Z=0.04[0m
+[0;32mI (185284) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.06 Z=-0.04[0m
+[0;32mI (185484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.06 Z=0.02[0m
+[0;32mI (185684) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.09 Z=0.09[0m
+[0;32mI (185884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.14 Z=0.04[0m
+[0;32mI (186084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.10 Z=0.00[0m
+[0;32mI (186284) SensorReadout: Accel [m/s²]: X=-0.20 Y=0.08 Z=-0.02[0m
+[0;32mI (186484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.14 Z=0.06[0m
+[0;32mI (186684) SensorReadout: Accel [m/s²]: X=-0.09 Y=0.07 Z=0.04[0m
+[0;32mI (186884) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.12 Z=-0.03[0m
+[0;32mI (187084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.08 Z=0.02[0m
+[0;32mI (187284) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.11 Z=-0.01[0m
+[0;32mI (187484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.16 Z=0.03[0m
+[0;32mI (187684) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.03 Z=-0.05[0m
+[0;32mI (187884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.18 Z=0.07[0m
+[0;32mI (188084) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.09 Z=0.03[0m
+[0;32mI (188284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.07 Z=-0.00[0m
+[0;32mI (188484) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.17 Z=0.01[0m
+[0;32mI (188684) SensorReadout: Accel [m/s²]: X=-0.07 Y=0.10 Z=-0.00[0m
+[0;32mI (188884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=0.03[0m
+[0;32mI (189084) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.13 Z=0.01[0m
+[0;32mI (189284) SensorReadout: Accel [m/s²]: X=-0.08 Y=0.04 Z=0.02[0m
+[0;32mI (189484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.10 Z=0.03[0m
+[0;32mI (189684) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.13 Z=-0.00[0m
+[0;32mI (189884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.13 Z=0.00[0m
+[0;32mI (190084) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.10 Z=-0.02[0m
+[0;33mW (190274) SystemMonitor: [190s] Wi-Fi: not connected[0m
+[0;32mI (190274) SystemMonitor: [190s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (190274) SystemMonitor: [190s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (190284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.15 Z=0.02[0m
+[0;32mI (190484) SensorReadout: Accel [m/s²]: X=-0.06 Y=0.02 Z=0.04[0m
+[0;32mI (190684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.17 Z=0.01[0m
+[0;32mI (190884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.11 Z=0.02[0m
+[0;32mI (191084) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.15 Z=0.03[0m
+[0;32mI (191284) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.13 Z=0.03[0m
+[0;32mI (191484) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.16 Z=0.01[0m
+[0;32mI (191684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.19 Z=0.03[0m
+[0;32mI (191884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.12 Z=-0.02[0m
+[0;32mI (192084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.16 Z=-0.01[0m
+[0;32mI (192284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.09 Z=-0.01[0m
+[0;32mI (192484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.14 Z=0.05[0m
+[0;32mI (192684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.20 Z=0.01[0m
+[0;32mI (192884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.14 Z=0.03[0m
+[0;32mI (193084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.13 Z=-0.02[0m
+[0;32mI (193284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.05 Z=-0.01[0m
+[0;32mI (193484) SensorReadout: Accel [m/s²]: X=-0.22 Y=0.15 Z=-0.00[0m
+[0;32mI (193684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.10 Z=0.01[0m
+[0;32mI (193884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.13 Z=0.01[0m
+[0;32mI (194084) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.08 Z=0.05[0m
+[0;32mI (194284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.13 Z=0.01[0m
+[0;32mI (194484) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.11 Z=-0.09[0m
+[0;32mI (194684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.14 Z=-0.02[0m
+[0;32mI (194884) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.02 Z=-0.08[0m
+[0;32mI (195084) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.13 Z=-0.05[0m
+[0;32mI (195284) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.13 Z=0.07[0m
+[0;32mI (195484) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.12 Z=0.05[0m
+[0;32mI (195684) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.15 Z=0.01[0m
+[0;32mI (195884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.15 Z=-0.02[0m
+[0;32mI (196084) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.08 Z=-0.02[0m
+[0;32mI (196284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.09 Z=-0.03[0m
+[0;32mI (196484) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.14 Z=0.08[0m
+[0;32mI (196684) SensorReadout: Accel [m/s²]: X=-0.24 Y=0.15 Z=0.00[0m
+[0;32mI (196884) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.05 Z=0.00[0m
+[0;32mI (197084) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.14 Z=-0.01[0m
+[0;32mI (197284) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.12 Z=0.00[0m
+[0;32mI (197484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.09 Z=0.01[0m
+[0;32mI (197684) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.12 Z=0.05[0m
+[0;32mI (197884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.11 Z=-0.00[0m
+[0;32mI (198084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.08 Z=0.05[0m
+[0;32mI (198284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.10 Z=0.01[0m
+[0;32mI (198484) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.12 Z=-0.03[0m
+[0;32mI (198684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.18 Z=0.08[0m
+[0;32mI (198884) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.10 Z=0.01[0m
+[0;32mI (199084) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.08 Z=-0.02[0m
+[0;32mI (199284) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.17 Z=0.03[0m
+[0;32mI (199484) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.08 Z=0.02[0m
+[0;32mI (199684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.07 Z=0.05[0m
+[0;32mI (199884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.10 Z=0.01[0m
+[0;32mI (200084) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.15 Z=0.03[0m
+[0;33mW (200274) SystemMonitor: [200s] Wi-Fi: not connected[0m
+[0;32mI (200274) SystemMonitor: [200s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (200274) SystemMonitor: [200s] Heap: free=452964 bytes | min ever=448836 bytes[0m
+[0;32mI (200284) SensorReadout: Accel [m/s²]: X=-0.16 Y=0.09 Z=-0.09[0m
+[0;32mI (200484) SensorReadout: Accel [m/s²]: X=-0.19 Y=0.11 Z=0.02[0m
+[0;32mI (200684) SensorReadout: Accel [m/s²]: X=-0.15 Y=0.14 Z=0.02[0m
+[0;32mI (200884) SensorReadout: Accel [m/s²]: X=-0.12 Y=0.10 Z=-0.01[0m
+[0;32mI (201084) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.07 Z=0.01[0m
+[0;32mI (201284) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.10 Z=0.01[0m
+[0;32mI (201484) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.13 Z=-0.02[0m
+[0;32mI (201684) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.07 Z=-0.05[0m
+[0;32mI (201884) SensorReadout: Accel [m/s²]: X=-0.11 Y=0.17 Z=0.03[0m
+[0;32mI (202084) SensorReadout: Accel [m/s²]: X=-0.14 Y=0.16 Z=0.02[0m
+[0;32mI (202284) SensorReadout: Accel [m/s²]: X=-0.17 Y=0.11 Z=0.06[0m
+[0;32mI (202484) SensorReadout: Accel [m/s²]: X=0.06 Y=-0.10 Z=-0.14[0m
+[0;32mI (202684) SensorReadout: Accel [m/s²]: X=-0.30 Y=0.32 Z=-0.01[0m
+[0;32mI (202884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.10 Z=-0.03[0m
+[0;32mI (203084) SensorReadout: Accel [m/s²]: X=-0.09 Y=0.18 Z=-0.01[0m
+[0;32mI (203284) SensorReadout: Accel [m/s²]: X=-0.10 Y=0.26 Z=0.05[0m
+[0;32mI (203484) SensorReadout: Accel [m/s²]: X=-0.07 Y=0.19 Z=-0.02[0m
+[0;32mI (203684) SensorReadout: Accel [m/s²]: X=-0.21 Y=0.19 Z=-0.02[0m
+[0;32mI (203884) SensorReadout: Accel [m/s²]: X=-0.13 Y=0.16 Z=0.04[0m
+[0;32mI (204084) SensorReadout: Accel [m/s²]: X=-0.06 Y=0.19 Z=0.02[0m

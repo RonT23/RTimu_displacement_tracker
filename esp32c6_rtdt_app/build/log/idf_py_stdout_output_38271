@@ -1,0 +1,1135 @@
+[0;32mI (113) esp_image: segment 3: paddr=000349b4 vaddr=408060b4 sizeur application code to adapt `driver/i2c_master.h`[0m
+I (2ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400294a6
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe90
+load:0x4086e610,len:0x3068
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 12 2025 04:44:37[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (30) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (34) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (42) boot: Partition Table:[0m
+[0;32mI (45) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (64) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (71) boot: End of partition table[0m
+[0;32mI (74) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09f3ch ( 40764) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=00019f64 vaddr=40800000 size=060b4h ( 24756) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1498ch ( 84364) map[0m
+[0;32mI (113) esp_image: segment 3: paddr=000349b4 vaddr=408060b4 size=06b30h ( 27440) load[0m
+[0;32mI (119) esp_image: segment 4: paddr=0003b4ec vaddr=4080cbf0 size=017b0h (  6064) load[0m
+[0;32mI (124) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (125) boot: Disabling RNG early entropy source...[0m
+[0;32mI (138) cpu_start: Unicore app[0m
+[0;32mI (147) cpu_start: Pro cpu start user code[0m
+[0;32mI (147) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (148) app_init: Application information:[0m
+[0;32mI (148) app_init: Project name:     esp32c6_rtdt_app[0m
+[0;32mI (152) app_init: App version:      39aa84f-dirty[0m
+[0;32mI (156) app_init: Compile time:     Jul 12 2025 18:21:50[0m
+[0;32mI (161) app_init: ELF file SHA256:  8dd6d386a...[0m
+[0;32mI (166) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (170) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (173) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (177) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (181) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (188) heap_init: At 4080FF80 len 0006C690 (433 KiB): RAM[0m
+[0;32mI (193) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (198) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (204) spi_flash: detected chip: generic[0m
+[0;32mI (207) spi_flash: flash io: dio[0m
+[0;33mW (210) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (222) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (232) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (238) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (245) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (249) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (253) main_task: Started on CPU0[0m
+[0;32mI (253) main_task: Calling app_main()[0m
+[0;32mI (253) I2C: Initialization result: ESP_OK[0m
+[0;32mI (263) MPU6050: Initialization result: ESP_OK[0m
+[0;33mW (263) SystemMonitor: [0s] Wi-Fi: not connected[0m
+[0;32mI (263) main_task: Returned from app_main()[0m
+[0;32mI (263) SystemMonitor: [0s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (273) SystemMonitor: [0s] Heap: free=451500 bytes | min ever=451308 bytes[0m
+[0;33mW (5283) SystemMonitor: [5s] Wi-Fi: not connected[0m
+[0;32mI (5283) SystemMonitor: [5s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (5283) SystemMonitor: [5s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (10283) SystemMonitor: [10s] Wi-Fi: not connected[0m
+[0;32mI (10283) SystemMonitor: [10s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (10283) SystemMonitor: [10s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (15283) SystemMonitor: [15s] Wi-Fi: not connected[0m
+[0;32mI (15283) SystemMonitor: [15s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (15283) SystemMonitor: [15s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (20283) SystemMonitor: [20s] Wi-Fi: not connected[0m
+[0;32mI (20283) SystemMonitor: [20s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (20283) SystemMonitor: [20s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (25283) SystemMonitor: [25s] Wi-Fi: not connected[0m
+[0;32mI (25283) SystemMonitor: [25s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (25283) SystemMonitor: [25s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (30283) SystemMonitor: [30s] Wi-Fi: not connected[0m
+[0;32mI (30283) SystemMonitor: [30s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (30283) SystemMonitor: [30s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (35283) SystemMonitor: [35s] Wi-Fi: not connected[0m
+[0;32mI (35283) SystemMonitor: [35s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (35283) SystemMonitor: [35s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (40283) SystemMonitor: [40s] Wi-Fi: not connected[0m
+[0;32mI (40283) SystemMonitor: [40s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (40283) SystemMonitor: [40s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (45283) SystemMonitor: [45s] Wi-Fi: not connected[0m
+[0;32mI (45283) SystemMonitor: [45s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (45283) SystemMonitor: [45s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (50283) SystemMonitor: [50s] Wi-Fi: not connected[0m
+[0;32mI (50283) SystemMonitor: [50s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (50283) SystemMonitor: [50s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (55283) SystemMonitor: [55s] Wi-Fi: not connected[0m
+[0;32mI (55283) SystemMonitor: [55s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (55283) SystemMonitor: [55s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (60283) SystemMonitor: [60s] Wi-Fi: not connected[0m
+[0;32mI (60283) SystemMonitor: [60s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (60283) SystemMonitor: [60s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (65283) SystemMonitor: [65s] Wi-Fi: not connected[0m
+[0;32mI (65283) SystemMonitor: [65s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (65283) SystemMonitor: [65s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (70283) SystemMonitor: [70s] Wi-Fi: not connected[0m
+[0;32mI (70283) SystemMonitor: [70s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (70283) SystemMonitor: [70s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (75283) SystemMonitor: [75s] Wi-Fi: not connected[0m
+[0;32mI (75283) SystemMonitor: [75s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (75283) SystemMonitor: [75s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (80283) SystemMonitor: [80s] Wi-Fi: not connected[0m
+[0;32mI (80283) SystemMonitor: [80s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (80283) SystemMonitor: [80s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (85283) SystemMonitor: [85s] Wi-Fi: not connected[0m
+[0;32mI (85283) SystemMonitor: [85s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (85283) SystemMonitor: [85s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (90283) SystemMonitor: [90s] Wi-Fi: not connected[0m
+[0;32mI (90283) SystemMonitor: [90s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (90283) SystemMonitor: [90s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (95283) SystemMonitor: [95s] Wi-Fi: not connected[0m
+[0;32mI (95283) SystemMonitor: [95s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (95283) SystemMonitor: [95s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (100283) SystemMonitor: [100s] Wi-Fi: not connected[0m
+[0;32mI (100283) SystemMonitor: [100s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (100283) SystemMonitor: [100s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (105283) SystemMonitor: [105s] Wi-Fi: not connected[0m
+[0;32mI (105283) SystemMonitor: [105s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (105283) SystemMonitor: [105s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (110283) SystemMonitor: [110s] Wi-Fi: not connected[0m
+[0;32mI (110283) SystemMonitor: [110s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (110283) SystemMonitor: [110s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (115283) SystemMonitor: [115s] Wi-Fi: not connected[0m
+[0;32mI (115283) SystemMonitor: [115s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (115283) SystemMonitor: [115s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (120283) SystemMonitor: [120s] Wi-Fi: not connected[0m
+[0;32mI (120283) SystemMonitor: [120s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (120283) SystemMonitor: [120s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (125283) SystemMonitor: [125s] Wi-Fi: not connected[0m
+[0;32mI (125283) SystemMonitor: [125s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (125283) SystemMonitor: [125s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (130283) SystemMonitor: [130s] Wi-Fi: not connected[0m
+[0;32mI (130283) SystemMonitor: [130s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (130283) SystemMonitor: [130s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (135283) SystemMonitor: [135s] Wi-Fi: not connected[0m
+[0;32mI (135283) SystemMonitor: [135s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (135283) SystemMonitor: [135s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (140283) SystemMonitor: [140s] Wi-Fi: not connected[0m
+[0;32mI (140283) SystemMonitor: [140s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (140283) SystemMonitor: [140s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (145283) SystemMonitor: [145s] Wi-Fi: not connected[0m
+[0;32mI (145283) SystemMonitor: [145s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (145283) SystemMonitor: [145s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (150283) SystemMonitor: [150s] Wi-Fi: not connected[0m
+[0;32mI (150283) SystemMonitor: [150s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (150283) SystemMonitor: [150s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (155283) SystemMonitor: [155s] Wi-Fi: not connected[0m
+[0;32mI (155283) SystemMonitor: [155s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (155283) SystemMonitor: [155s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (160283) SystemMonitor: [160s] Wi-Fi: not connected[0m
+[0;32mI (160283) SystemMonitor: [160s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (160283) SystemMonitor: [160s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (165283) SystemMonitor: [165s] Wi-Fi: not connected[0m
+[0;32mI (165283) SystemMonitor: [165s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (165283) SystemMonitor: [165s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (170283) SystemMonitor: [170s] Wi-Fi: not connected[0m
+[0;32mI (170283) SystemMonitor: [170s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (170283) SystemMonitor: [170s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (175283) SystemMonitor: [175s] Wi-Fi: not connected[0m
+[0;32mI (175283) SystemMonitor: [175s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (175283) SystemMonitor: [175s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (180283) SystemMonitor: [180s] Wi-Fi: not connected[0m
+[0;32mI (180283) SystemMonitor: [180s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (180283) SystemMonitor: [180s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (185283) SystemMonitor: [185s] Wi-Fi: not connected[0m
+[0;32mI (185283) SystemMonitor: [185s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (185283) SystemMonitor: [185s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (190283) SystemMonitor: [190s] Wi-Fi: not connected[0m
+[0;32mI (190283) SystemMonitor: [190s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (190283) SystemMonitor: [190s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (195283) SystemMonitor: [195s] Wi-Fi: not connected[0m
+[0;32mI (195283) SystemMonitor: [195s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (195283) SystemMonitor: [195s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (200283) SystemMonitor: [200s] Wi-Fi: not connected[0m
+[0;32mI (200283) SystemMonitor: [200s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (200283) SystemMonitor: [200s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (205283) SystemMonitor: [205s] Wi-Fi: not connected[0m
+[0;32mI (205283) SystemMonitor: [205s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (205283) SystemMonitor: [205s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (210283) SystemMonitor: [210s] Wi-Fi: not connected[0m
+[0;32mI (210283) SystemMonitor: [210s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (210283) SystemMonitor: [210s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (215283) SystemMonitor: [215s] Wi-Fi: not connected[0m
+[0;32mI (215283) SystemMonitor: [215s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (215283) SystemMonitor: [215s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (220283) SystemMonitor: [220s] Wi-Fi: not connected[0m
+[0;32mI (220283) SystemMonitor: [220s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (220283) SystemMonitor: [220s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (225283) SystemMonitor: [225s] Wi-Fi: not connected[0m
+[0;32mI (225283) SystemMonitor: [225s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (225283) SystemMonitor: [225s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (230283) SystemMonitor: [230s] Wi-Fi: not connected[0m
+[0;32mI (230283) SystemMonitor: [230s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (230283) SystemMonitor: [230s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (235283) SystemMonitor: [235s] Wi-Fi: not connected[0m
+[0;32mI (235283) SystemMonitor: [235s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (235283) SystemMonitor: [235s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (240283) SystemMonitor: [240s] Wi-Fi: not connected[0m
+[0;32mI (240283) SystemMonitor: [240s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (240283) SystemMonitor: [240s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (245283) SystemMonitor: [245s] Wi-Fi: not connected[0m
+[0;32mI (245283) SystemMonitor: [245s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (245283) SystemMonitor: [245s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (250283) SystemMonitor: [250s] Wi-Fi: not connected[0m
+[0;32mI (250283) SystemMonitor: [250s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (250283) SystemMonitor: [250s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (255283) SystemMonitor: [255s] Wi-Fi: not connected[0m
+[0;32mI (255283) SystemMonitor: [255s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (255283) SystemMonitor: [255s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (260283) SystemMonitor: [260s] Wi-Fi: not connected[0m
+[0;32mI (260283) SystemMonitor: [260s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (260283) SystemMonitor: [260s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (265283) SystemMonitor: [265s] Wi-Fi: not connected[0m
+[0;32mI (265283) SystemMonitor: [265s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (265283) SystemMonitor: [265s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (270283) SystemMonitor: [270s] Wi-Fi: not connected[0m
+[0;32mI (270283) SystemMonitor: [270s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (270283) SystemMonitor: [270s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (275283) SystemMonitor: [275s] Wi-Fi: not connected[0m
+[0;32mI (275283) SystemMonitor: [275s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (275283) SystemMonitor: [275s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (280283) SystemMonitor: [280s] Wi-Fi: not connected[0m
+[0;32mI (280283) SystemMonitor: [280s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (280283) SystemMonitor: [280s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (285283) SystemMonitor: [285s] Wi-Fi: not connected[0m
+[0;32mI (285283) SystemMonitor: [285s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (285283) SystemMonitor: [285s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (290283) SystemMonitor: [290s] Wi-Fi: not connected[0m
+[0;32mI (290283) SystemMonitor: [290s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (290283) SystemMonitor: [290s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (295283) SystemMonitor: [295s] Wi-Fi: not connected[0m
+[0;32mI (295283) SystemMonitor: [295s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (295283) SystemMonitor: [295s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (300283) SystemMonitor: [300s] Wi-Fi: not connected[0m
+[0;32mI (300283) SystemMonitor: [300s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (300283) SystemMonitor: [300s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (305283) SystemMonitor: [305s] Wi-Fi: not connected[0m
+[0;32mI (305283) SystemMonitor: [305s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (305283) SystemMonitor: [305s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (310283) SystemMonitor: [310s] Wi-Fi: not connected[0m
+[0;32mI (310283) SystemMonitor: [310s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (310283) SystemMonitor: [310s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (315283) SystemMonitor: [315s] Wi-Fi: not connected[0m
+[0;32mI (315283) SystemMonitor: [315s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (315283) SystemMonitor: [315s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (320283) SystemMonitor: [320s] Wi-Fi: not connected[0m
+[0;32mI (320283) SystemMonitor: [320s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (320283) SystemMonitor: [320s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (325283) SystemMonitor: [325s] Wi-Fi: not connected[0m
+[0;32mI (325283) SystemMonitor: [325s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (325283) SystemMonitor: [325s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (330283) SystemMonitor: [330s] Wi-Fi: not connected[0m
+[0;32mI (330283) SystemMonitor: [330s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (330283) SystemMonitor: [330s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (335283) SystemMonitor: [335s] Wi-Fi: not connected[0m
+[0;32mI (335283) SystemMonitor: [335s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (335283) SystemMonitor: [335s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (340283) SystemMonitor: [340s] Wi-Fi: not connected[0m
+[0;32mI (340283) SystemMonitor: [340s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (340283) SystemMonitor: [340s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (345283) SystemMonitor: [345s] Wi-Fi: not connected[0m
+[0;32mI (345283) SystemMonitor: [345s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (345283) SystemMonitor: [345s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (350283) SystemMonitor: [350s] Wi-Fi: not connected[0m
+[0;32mI (350283) SystemMonitor: [350s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (350283) SystemMonitor: [350s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (355283) SystemMonitor: [355s] Wi-Fi: not connected[0m
+[0;32mI (355283) SystemMonitor: [355s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (355283) SystemMonitor: [355s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (360283) SystemMonitor: [360s] Wi-Fi: not connected[0m
+[0;32mI (360283) SystemMonitor: [360s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (360283) SystemMonitor: [360s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (365283) SystemMonitor: [365s] Wi-Fi: not connected[0m
+[0;32mI (365283) SystemMonitor: [365s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (365283) SystemMonitor: [365s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (370283) SystemMonitor: [370s] Wi-Fi: not connected[0m
+[0;32mI (370283) SystemMonitor: [370s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (370283) SystemMonitor: [370s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (375283) SystemMonitor: [375s] Wi-Fi: not connected[0m
+[0;32mI (375283) SystemMonitor: [375s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (375283) SystemMonitor: [375s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (380283) SystemMonitor: [380s] Wi-Fi: not connected[0m
+[0;32mI (380283) SystemMonitor: [380s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (380283) SystemMonitor: [380s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (385283) SystemMonitor: [385s] Wi-Fi: not connected[0m
+[0;32mI (385283) SystemMonitor: [385s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (385283) SystemMonitor: [385s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (390283) SystemMonitor: [390s] Wi-Fi: not connected[0m
+[0;32mI (390283) SystemMonitor: [390s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (390283) SystemMonitor: [390s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (395283) SystemMonitor: [395s] Wi-Fi: not connected[0m
+[0;32mI (395283) SystemMonitor: [395s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (395283) SystemMonitor: [395s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (400283) SystemMonitor: [400s] Wi-Fi: not connected[0m
+[0;32mI (400283) SystemMonitor: [400s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (400283) SystemMonitor: [400s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (405283) SystemMonitor: [405s] Wi-Fi: not connected[0m
+[0;32mI (405283) SystemMonitor: [405s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (405283) SystemMonitor: [405s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (410283) SystemMonitor: [410s] Wi-Fi: not connected[0m
+[0;32mI (410283) SystemMonitor: [410s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (410283) SystemMonitor: [410s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (415283) SystemMonitor: [415s] Wi-Fi: not connected[0m
+[0;32mI (415283) SystemMonitor: [415s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (415283) SystemMonitor: [415s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (420283) SystemMonitor: [420s] Wi-Fi: not connected[0m
+[0;32mI (420283) SystemMonitor: [420s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (420283) SystemMonitor: [420s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (425283) SystemMonitor: [425s] Wi-Fi: not connected[0m
+[0;32mI (425283) SystemMonitor: [425s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (425283) SystemMonitor: [425s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (430283) SystemMonitor: [430s] Wi-Fi: not connected[0m
+[0;32mI (430283) SystemMonitor: [430s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (430283) SystemMonitor: [430s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (435283) SystemMonitor: [435s] Wi-Fi: not connected[0m
+[0;32mI (435283) SystemMonitor: [435s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (435283) SystemMonitor: [435s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (440283) SystemMonitor: [440s] Wi-Fi: not connected[0m
+[0;32mI (440283) SystemMonitor: [440s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (440283) SystemMonitor: [440s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (445283) SystemMonitor: [445s] Wi-Fi: not connected[0m
+[0;32mI (445283) SystemMonitor: [445s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (445283) SystemMonitor: [445s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (450283) SystemMonitor: [450s] Wi-Fi: not connected[0m
+[0;32mI (450283) SystemMonitor: [450s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (450283) SystemMonitor: [450s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (455283) SystemMonitor: [455s] Wi-Fi: not connected[0m
+[0;32mI (455283) SystemMonitor: [455s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (455283) SystemMonitor: [455s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (460283) SystemMonitor: [460s] Wi-Fi: not connected[0m
+[0;32mI (460283) SystemMonitor: [460s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (460283) SystemMonitor: [460s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (465283) SystemMonitor: [465s] Wi-Fi: not connected[0m
+[0;32mI (465283) SystemMonitor: [465s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (465283) SystemMonitor: [465s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (470283) SystemMonitor: [470s] Wi-Fi: not connected[0m
+[0;32mI (470283) SystemMonitor: [470s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (470283) SystemMonitor: [470s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (475283) SystemMonitor: [475s] Wi-Fi: not connected[0m
+[0;32mI (475283) SystemMonitor: [475s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (475283) SystemMonitor: [475s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (480283) SystemMonitor: [480s] Wi-Fi: not connected[0m
+[0;32mI (480283) SystemMonitor: [480s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (480283) SystemMonitor: [480s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (485283) SystemMonitor: [485s] Wi-Fi: not connected[0m
+[0;32mI (485283) SystemMonitor: [485s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (485283) SystemMonitor: [485s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (490283) SystemMonitor: [490s] Wi-Fi: not connected[0m
+[0;32mI (490283) SystemMonitor: [490s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (490283) SystemMonitor: [490s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (495283) SystemMonitor: [495s] Wi-Fi: not connected[0m
+[0;32mI (495283) SystemMonitor: [495s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (495283) SystemMonitor: [495s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (500283) SystemMonitor: [500s] Wi-Fi: not connected[0m
+[0;32mI (500283) SystemMonitor: [500s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (500283) SystemMonitor: [500s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (505283) SystemMonitor: [505s] Wi-Fi: not connected[0m
+[0;32mI (505283) SystemMonitor: [505s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (505283) SystemMonitor: [505s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (510283) SystemMonitor: [510s] Wi-Fi: not connected[0m
+[0;32mI (510283) SystemMonitor: [510s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (510283) SystemMonitor: [510s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (515283) SystemMonitor: [515s] Wi-Fi: not connected[0m
+[0;32mI (515283) SystemMonitor: [515s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (515283) SystemMonitor: [515s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (520283) SystemMonitor: [520s] Wi-Fi: not connected[0m
+[0;32mI (520283) SystemMonitor: [520s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (520283) SystemMonitor: [520s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (525283) SystemMonitor: [525s] Wi-Fi: not connected[0m
+[0;32mI (525283) SystemMonitor: [525s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (525283) SystemMonitor: [525s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (530283) SystemMonitor: [530s] Wi-Fi: not connected[0m
+[0;32mI (530283) SystemMonitor: [530s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (530283) SystemMonitor: [530s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (535283) SystemMonitor: [535s] Wi-Fi: not connected[0m
+[0;32mI (535283) SystemMonitor: [535s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (535283) SystemMonitor: [535s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (540283) SystemMonitor: [540s] Wi-Fi: not connected[0m
+[0;32mI (540283) SystemMonitor: [540s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (540283) SystemMonitor: [540s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (545283) SystemMonitor: [545s] Wi-Fi: not connected[0m
+[0;32mI (545283) SystemMonitor: [545s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (545283) SystemMonitor: [545s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (550283) SystemMonitor: [550s] Wi-Fi: not connected[0m
+[0;32mI (550283) SystemMonitor: [550s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (550283) SystemMonitor: [550s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (555283) SystemMonitor: [555s] Wi-Fi: not connected[0m
+[0;32mI (555283) SystemMonitor: [555s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (555283) SystemMonitor: [555s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (560283) SystemMonitor: [560s] Wi-Fi: not connected[0m
+[0;32mI (560283) SystemMonitor: [560s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (560283) SystemMonitor: [560s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (565283) SystemMonitor: [565s] Wi-Fi: not connected[0m
+[0;32mI (565283) SystemMonitor: [565s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (565283) SystemMonitor: [565s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (570283) SystemMonitor: [570s] Wi-Fi: not connected[0m
+[0;32mI (570283) SystemMonitor: [570s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (570283) SystemMonitor: [570s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (575283) SystemMonitor: [575s] Wi-Fi: not connected[0m
+[0;32mI (575283) SystemMonitor: [575s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (575283) SystemMonitor: [575s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (580283) SystemMonitor: [580s] Wi-Fi: not connected[0m
+[0;32mI (580283) SystemMonitor: [580s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (580283) SystemMonitor: [580s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (585283) SystemMonitor: [585s] Wi-Fi: not connected[0m
+[0;32mI (585283) SystemMonitor: [585s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (585283) SystemMonitor: [585s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (590283) SystemMonitor: [590s] Wi-Fi: not connected[0m
+[0;32mI (590283) SystemMonitor: [590s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (590283) SystemMonitor: [590s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (595283) SystemMonitor: [595s] Wi-Fi: not connected[0m
+[0;32mI (595283) SystemMonitor: [595s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (595283) SystemMonitor: [595s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (600283) SystemMonitor: [600s] Wi-Fi: not connected[0m
+[0;32mI (600283) SystemMonitor: [600s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (600283) SystemMonitor: [600s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (605283) SystemMonitor: [605s] Wi-Fi: not connected[0m
+[0;32mI (605283) SystemMonitor: [605s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (605283) SystemMonitor: [605s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (610283) SystemMonitor: [610s] Wi-Fi: not connected[0m
+[0;32mI (610283) SystemMonitor: [610s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (610283) SystemMonitor: [610s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (615283) SystemMonitor: [615s] Wi-Fi: not connected[0m
+[0;32mI (615283) SystemMonitor: [615s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (615283) SystemMonitor: [615s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (620283) SystemMonitor: [620s] Wi-Fi: not connected[0m
+[0;32mI (620283) SystemMonitor: [620s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (620283) SystemMonitor: [620s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (625283) SystemMonitor: [625s] Wi-Fi: not connected[0m
+[0;32mI (625283) SystemMonitor: [625s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (625283) SystemMonitor: [625s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (630283) SystemMonitor: [630s] Wi-Fi: not connected[0m
+[0;32mI (630283) SystemMonitor: [630s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (630283) SystemMonitor: [630s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (635283) SystemMonitor: [635s] Wi-Fi: not connected[0m
+[0;32mI (635283) SystemMonitor: [635s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (635283) SystemMonitor: [635s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (640283) SystemMonitor: [640s] Wi-Fi: not connected[0m
+[0;32mI (640283) SystemMonitor: [640s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (640283) SystemMonitor: [640s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (645283) SystemMonitor: [645s] Wi-Fi: not connected[0m
+[0;32mI (645283) SystemMonitor: [645s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (645283) SystemMonitor: [645s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (650283) SystemMonitor: [650s] Wi-Fi: not connected[0m
+[0;32mI (650283) SystemMonitor: [650s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (650283) SystemMonitor: [650s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (655283) SystemMonitor: [655s] Wi-Fi: not connected[0m
+[0;32mI (655283) SystemMonitor: [655s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (655283) SystemMonitor: [655s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (660283) SystemMonitor: [660s] Wi-Fi: not connected[0m
+[0;32mI (660283) SystemMonitor: [660s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (660283) SystemMonitor: [660s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (665283) SystemMonitor: [665s] Wi-Fi: not connected[0m
+[0;32mI (665283) SystemMonitor: [665s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (665283) SystemMonitor: [665s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (670283) SystemMonitor: [670s] Wi-Fi: not connected[0m
+[0;32mI (670283) SystemMonitor: [670s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (670283) SystemMonitor: [670s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (675283) SystemMonitor: [675s] Wi-Fi: not connected[0m
+[0;32mI (675283) SystemMonitor: [675s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (675283) SystemMonitor: [675s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (680283) SystemMonitor: [680s] Wi-Fi: not connected[0m
+[0;32mI (680283) SystemMonitor: [680s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (680283) SystemMonitor: [680s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (685283) SystemMonitor: [685s] Wi-Fi: not connected[0m
+[0;32mI (685283) SystemMonitor: [685s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (685283) SystemMonitor: [685s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (690283) SystemMonitor: [690s] Wi-Fi: not connected[0m
+[0;32mI (690283) SystemMonitor: [690s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (690283) SystemMonitor: [690s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (695283) SystemMonitor: [695s] Wi-Fi: not connected[0m
+[0;32mI (695283) SystemMonitor: [695s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (695283) SystemMonitor: [695s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (700283) SystemMonitor: [700s] Wi-Fi: not connected[0m
+[0;32mI (700283) SystemMonitor: [700s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (700283) SystemMonitor: [700s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (705283) SystemMonitor: [705s] Wi-Fi: not connected[0m
+[0;32mI (705283) SystemMonitor: [705s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (705283) SystemMonitor: [705s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (710283) SystemMonitor: [710s] Wi-Fi: not connected[0m
+[0;32mI (710283) SystemMonitor: [710s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (710283) SystemMonitor: [710s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (715283) SystemMonitor: [715s] Wi-Fi: not connected[0m
+[0;32mI (715283) SystemMonitor: [715s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (715283) SystemMonitor: [715s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (720283) SystemMonitor: [720s] Wi-Fi: not connected[0m
+[0;32mI (720283) SystemMonitor: [720s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (720283) SystemMonitor: [720s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (725283) SystemMonitor: [725s] Wi-Fi: not connected[0m
+[0;32mI (725283) SystemMonitor: [725s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (725283) SystemMonitor: [725s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (730283) SystemMonitor: [730s] Wi-Fi: not connected[0m
+[0;32mI (730283) SystemMonitor: [730s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (730283) SystemMonitor: [730s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (735283) SystemMonitor: [735s] Wi-Fi: not connected[0m
+[0;32mI (735283) SystemMonitor: [735s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (735283) SystemMonitor: [735s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (740283) SystemMonitor: [740s] Wi-Fi: not connected[0m
+[0;32mI (740283) SystemMonitor: [740s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (740283) SystemMonitor: [740s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (745283) SystemMonitor: [745s] Wi-Fi: not connected[0m
+[0;32mI (745283) SystemMonitor: [745s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (745283) SystemMonitor: [745s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (750283) SystemMonitor: [750s] Wi-Fi: not connected[0m
+[0;32mI (750283) SystemMonitor: [750s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (750283) SystemMonitor: [750s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (755283) SystemMonitor: [755s] Wi-Fi: not connected[0m
+[0;32mI (755283) SystemMonitor: [755s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (755283) SystemMonitor: [755s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (760283) SystemMonitor: [760s] Wi-Fi: not connected[0m
+[0;32mI (760283) SystemMonitor: [760s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (760283) SystemMonitor: [760s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (765283) SystemMonitor: [765s] Wi-Fi: not connected[0m
+[0;32mI (765283) SystemMonitor: [765s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (765283) SystemMonitor: [765s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (770283) SystemMonitor: [770s] Wi-Fi: not connected[0m
+[0;32mI (770283) SystemMonitor: [770s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (770283) SystemMonitor: [770s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (775283) SystemMonitor: [775s] Wi-Fi: not connected[0m
+[0;32mI (775283) SystemMonitor: [775s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (775283) SystemMonitor: [775s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (780283) SystemMonitor: [780s] Wi-Fi: not connected[0m
+[0;32mI (780283) SystemMonitor: [780s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (780283) SystemMonitor: [780s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (785283) SystemMonitor: [785s] Wi-Fi: not connected[0m
+[0;32mI (785283) SystemMonitor: [785s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (785283) SystemMonitor: [785s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (790283) SystemMonitor: [790s] Wi-Fi: not connected[0m
+[0;32mI (790283) SystemMonitor: [790s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (790283) SystemMonitor: [790s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (795283) SystemMonitor: [795s] Wi-Fi: not connected[0m
+[0;32mI (795283) SystemMonitor: [795s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (795283) SystemMonitor: [795s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (800283) SystemMonitor: [800s] Wi-Fi: not connected[0m
+[0;32mI (800283) SystemMonitor: [800s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (800283) SystemMonitor: [800s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (805283) SystemMonitor: [805s] Wi-Fi: not connected[0m
+[0;32mI (805283) SystemMonitor: [805s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (805283) SystemMonitor: [805s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (810283) SystemMonitor: [810s] Wi-Fi: not connected[0m
+[0;32mI (810283) SystemMonitor: [810s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (810283) SystemMonitor: [810s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (815283) SystemMonitor: [815s] Wi-Fi: not connected[0m
+[0;32mI (815283) SystemMonitor: [815s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (815283) SystemMonitor: [815s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (820283) SystemMonitor: [820s] Wi-Fi: not connected[0m
+[0;32mI (820283) SystemMonitor: [820s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (820283) SystemMonitor: [820s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (825283) SystemMonitor: [825s] Wi-Fi: not connected[0m
+[0;32mI (825283) SystemMonitor: [825s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (825283) SystemMonitor: [825s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (830283) SystemMonitor: [830s] Wi-Fi: not connected[0m
+[0;32mI (830283) SystemMonitor: [830s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (830283) SystemMonitor: [830s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (835283) SystemMonitor: [835s] Wi-Fi: not connected[0m
+[0;32mI (835283) SystemMonitor: [835s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (835283) SystemMonitor: [835s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (840283) SystemMonitor: [840s] Wi-Fi: not connected[0m
+[0;32mI (840283) SystemMonitor: [840s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (840283) SystemMonitor: [840s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (845283) SystemMonitor: [845s] Wi-Fi: not connected[0m
+[0;32mI (845283) SystemMonitor: [845s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (845283) SystemMonitor: [845s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (850283) SystemMonitor: [850s] Wi-Fi: not connected[0m
+[0;32mI (850283) SystemMonitor: [850s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (850283) SystemMonitor: [850s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (855283) SystemMonitor: [855s] Wi-Fi: not connected[0m
+[0;32mI (855283) SystemMonitor: [855s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (855283) SystemMonitor: [855s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (860283) SystemMonitor: [860s] Wi-Fi: not connected[0m
+[0;32mI (860283) SystemMonitor: [860s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (860283) SystemMonitor: [860s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (865283) SystemMonitor: [865s] Wi-Fi: not connected[0m
+[0;32mI (865283) SystemMonitor: [865s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (865283) SystemMonitor: [865s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (870283) SystemMonitor: [870s] Wi-Fi: not connected[0m
+[0;32mI (870283) SystemMonitor: [870s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (870283) SystemMonitor: [870s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (875283) SystemMonitor: [875s] Wi-Fi: not connected[0m
+[0;32mI (875283) SystemMonitor: [875s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (875283) SystemMonitor: [875s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (880283) SystemMonitor: [880s] Wi-Fi: not connected[0m
+[0;32mI (880283) SystemMonitor: [880s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (880283) SystemMonitor: [880s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (885283) SystemMonitor: [885s] Wi-Fi: not connected[0m
+[0;32mI (885283) SystemMonitor: [885s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (885283) SystemMonitor: [885s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (890283) SystemMonitor: [890s] Wi-Fi: not connected[0m
+[0;32mI (890283) SystemMonitor: [890s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (890283) SystemMonitor: [890s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (895283) SystemMonitor: [895s] Wi-Fi: not connected[0m
+[0;32mI (895283) SystemMonitor: [895s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (895283) SystemMonitor: [895s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (900283) SystemMonitor: [900s] Wi-Fi: not connected[0m
+[0;32mI (900283) SystemMonitor: [900s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (900283) SystemMonitor: [900s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (905283) SystemMonitor: [905s] Wi-Fi: not connected[0m
+[0;32mI (905283) SystemMonitor: [905s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (905283) SystemMonitor: [905s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (910283) SystemMonitor: [910s] Wi-Fi: not connected[0m
+[0;32mI (910283) SystemMonitor: [910s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (910283) SystemMonitor: [910s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (915283) SystemMonitor: [915s] Wi-Fi: not connected[0m
+[0;32mI (915283) SystemMonitor: [915s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (915283) SystemMonitor: [915s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (920283) SystemMonitor: [920s] Wi-Fi: not connected[0m
+[0;32mI (920283) SystemMonitor: [920s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (920283) SystemMonitor: [920s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (925283) SystemMonitor: [925s] Wi-Fi: not connected[0m
+[0;32mI (925283) SystemMonitor: [925s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (925283) SystemMonitor: [925s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (930283) SystemMonitor: [930s] Wi-Fi: not connected[0m
+[0;32mI (930283) SystemMonitor: [930s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (930283) SystemMonitor: [930s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (935283) SystemMonitor: [935s] Wi-Fi: not connected[0m
+[0;32mI (935283) SystemMonitor: [935s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (935283) SystemMonitor: [935s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (940283) SystemMonitor: [940s] Wi-Fi: not connected[0m
+[0;32mI (940283) SystemMonitor: [940s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (940283) SystemMonitor: [940s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (945283) SystemMonitor: [945s] Wi-Fi: not connected[0m
+[0;32mI (945283) SystemMonitor: [945s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (945283) SystemMonitor: [945s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (950283) SystemMonitor: [950s] Wi-Fi: not connected[0m
+[0;32mI (950283) SystemMonitor: [950s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (950283) SystemMonitor: [950s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (955283) SystemMonitor: [955s] Wi-Fi: not connected[0m
+[0;32mI (955283) SystemMonitor: [955s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (955283) SystemMonitor: [955s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (960283) SystemMonitor: [960s] Wi-Fi: not connected[0m
+[0;32mI (960283) SystemMonitor: [960s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (960283) SystemMonitor: [960s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (965283) SystemMonitor: [965s] Wi-Fi: not connected[0m
+[0;32mI (965283) SystemMonitor: [965s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (965283) SystemMonitor: [965s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (970283) SystemMonitor: [970s] Wi-Fi: not connected[0m
+[0;32mI (970283) SystemMonitor: [970s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (970283) SystemMonitor: [970s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (975283) SystemMonitor: [975s] Wi-Fi: not connected[0m
+[0;32mI (975283) SystemMonitor: [975s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (975283) SystemMonitor: [975s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (980283) SystemMonitor: [980s] Wi-Fi: not connected[0m
+[0;32mI (980283) SystemMonitor: [980s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (980283) SystemMonitor: [980s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (985283) SystemMonitor: [985s] Wi-Fi: not connected[0m
+[0;32mI (985283) SystemMonitor: [985s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (985283) SystemMonitor: [985s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (990283) SystemMonitor: [990s] Wi-Fi: not connected[0m
+[0;32mI (990283) SystemMonitor: [990s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (990283) SystemMonitor: [990s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (995283) SystemMonitor: [995s] Wi-Fi: not connected[0m
+[0;32mI (995283) SystemMonitor: [995s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (995283) SystemMonitor: [995s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1000283) SystemMonitor: [1000s] Wi-Fi: not connected[0m
+[0;32mI (1000283) SystemMonitor: [1000s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1000283) SystemMonitor: [1000s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1005283) SystemMonitor: [1005s] Wi-Fi: not connected[0m
+[0;32mI (1005283) SystemMonitor: [1005s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1005283) SystemMonitor: [1005s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1010283) SystemMonitor: [1010s] Wi-Fi: not connected[0m
+[0;32mI (1010283) SystemMonitor: [1010s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1010283) SystemMonitor: [1010s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1015283) SystemMonitor: [1015s] Wi-Fi: not connected[0m
+[0;32mI (1015283) SystemMonitor: [1015s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1015283) SystemMonitor: [1015s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1020283) SystemMonitor: [1020s] Wi-Fi: not connected[0m
+[0;32mI (1020283) SystemMonitor: [1020s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1020283) SystemMonitor: [1020s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1025283) SystemMonitor: [1025s] Wi-Fi: not connected[0m
+[0;32mI (1025283) SystemMonitor: [1025s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1025283) SystemMonitor: [1025s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1030283) SystemMonitor: [1030s] Wi-Fi: not connected[0m
+[0;32mI (1030283) SystemMonitor: [1030s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1030283) SystemMonitor: [1030s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1035283) SystemMonitor: [1035s] Wi-Fi: not connected[0m
+[0;32mI (1035283) SystemMonitor: [1035s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1035283) SystemMonitor: [1035s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1040283) SystemMonitor: [1040s] Wi-Fi: not connected[0m
+[0;32mI (1040283) SystemMonitor: [1040s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1040283) SystemMonitor: [1040s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1045283) SystemMonitor: [1045s] Wi-Fi: not connected[0m
+[0;32mI (1045283) SystemMonitor: [1045s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1045283) SystemMonitor: [1045s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1050283) SystemMonitor: [1050s] Wi-Fi: not connected[0m
+[0;32mI (1050283) SystemMonitor: [1050s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1050283) SystemMonitor: [1050s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1055283) SystemMonitor: [1055s] Wi-Fi: not connected[0m
+[0;32mI (1055283) SystemMonitor: [1055s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1055283) SystemMonitor: [1055s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1060283) SystemMonitor: [1060s] Wi-Fi: not connected[0m
+[0;32mI (1060283) SystemMonitor: [1060s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1060283) SystemMonitor: [1060s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1065283) SystemMonitor: [1065s] Wi-Fi: not connected[0m
+[0;32mI (1065283) SystemMonitor: [1065s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1065283) SystemMonitor: [1065s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1070283) SystemMonitor: [1070s] Wi-Fi: not connected[0m
+[0;32mI (1070283) SystemMonitor: [1070s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1070283) SystemMonitor: [1070s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1075283) SystemMonitor: [1075s] Wi-Fi: not connected[0m
+[0;32mI (1075283) SystemMonitor: [1075s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1075283) SystemMonitor: [1075s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1080283) SystemMonitor: [1080s] Wi-Fi: not connected[0m
+[0;32mI (1080283) SystemMonitor: [1080s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1080283) SystemMonitor: [1080s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1085283) SystemMonitor: [1085s] Wi-Fi: not connected[0m
+[0;32mI (1085283) SystemMonitor: [1085s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1085283) SystemMonitor: [1085s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1090283) SystemMonitor: [1090s] Wi-Fi: not connected[0m
+[0;32mI (1090283) SystemMonitor: [1090s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1090283) SystemMonitor: [1090s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1095283) SystemMonitor: [1095s] Wi-Fi: not connected[0m
+[0;32mI (1095283) SystemMonitor: [1095s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1095283) SystemMonitor: [1095s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1100283) SystemMonitor: [1100s] Wi-Fi: not connected[0m
+[0;32mI (1100283) SystemMonitor: [1100s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1100283) SystemMonitor: [1100s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1105283) SystemMonitor: [1105s] Wi-Fi: not connected[0m
+[0;32mI (1105283) SystemMonitor: [1105s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1105283) SystemMonitor: [1105s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1110283) SystemMonitor: [1110s] Wi-Fi: not connected[0m
+[0;32mI (1110283) SystemMonitor: [1110s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1110283) SystemMonitor: [1110s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1115283) SystemMonitor: [1115s] Wi-Fi: not connected[0m
+[0;32mI (1115283) SystemMonitor: [1115s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1115283) SystemMonitor: [1115s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1120283) SystemMonitor: [1120s] Wi-Fi: not connected[0m
+[0;32mI (1120283) SystemMonitor: [1120s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1120283) SystemMonitor: [1120s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1125283) SystemMonitor: [1125s] Wi-Fi: not connected[0m
+[0;32mI (1125283) SystemMonitor: [1125s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1125283) SystemMonitor: [1125s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1130283) SystemMonitor: [1130s] Wi-Fi: not connected[0m
+[0;32mI (1130283) SystemMonitor: [1130s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1130283) SystemMonitor: [1130s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1135283) SystemMonitor: [1135s] Wi-Fi: not connected[0m
+[0;32mI (1135283) SystemMonitor: [1135s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1135283) SystemMonitor: [1135s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1140283) SystemMonitor: [1140s] Wi-Fi: not connected[0m
+[0;32mI (1140283) SystemMonitor: [1140s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1140283) SystemMonitor: [1140s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1145283) SystemMonitor: [1145s] Wi-Fi: not connected[0m
+[0;32mI (1145283) SystemMonitor: [1145s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1145283) SystemMonitor: [1145s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1150283) SystemMonitor: [1150s] Wi-Fi: not connected[0m
+[0;32mI (1150283) SystemMonitor: [1150s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1150283) SystemMonitor: [1150s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1155283) SystemMonitor: [1155s] Wi-Fi: not connected[0m
+[0;32mI (1155283) SystemMonitor: [1155s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1155283) SystemMonitor: [1155s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1160283) SystemMonitor: [1160s] Wi-Fi: not connected[0m
+[0;32mI (1160283) SystemMonitor: [1160s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1160283) SystemMonitor: [1160s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1165283) SystemMonitor: [1165s] Wi-Fi: not connected[0m
+[0;32mI (1165283) SystemMonitor: [1165s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1165283) SystemMonitor: [1165s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1170283) SystemMonitor: [1170s] Wi-Fi: not connected[0m
+[0;32mI (1170283) SystemMonitor: [1170s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1170283) SystemMonitor: [1170s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1175283) SystemMonitor: [1175s] Wi-Fi: not connected[0m
+[0;32mI (1175283) SystemMonitor: [1175s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1175283) SystemMonitor: [1175s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1180283) SystemMonitor: [1180s] Wi-Fi: not connected[0m
+[0;32mI (1180283) SystemMonitor: [1180s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1180283) SystemMonitor: [1180s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1185283) SystemMonitor: [1185s] Wi-Fi: not connected[0m
+[0;32mI (1185283) SystemMonitor: [1185s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1185283) SystemMonitor: [1185s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1190283) SystemMonitor: [1190s] Wi-Fi: not connected[0m
+[0;32mI (1190283) SystemMonitor: [1190s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1190283) SystemMonitor: [1190s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1195283) SystemMonitor: [1195s] Wi-Fi: not connected[0m
+[0;32mI (1195283) SystemMonitor: [1195s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1195283) SystemMonitor: [1195s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1200283) SystemMonitor: [1200s] Wi-Fi: not connected[0m
+[0;32mI (1200283) SystemMonitor: [1200s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1200283) SystemMonitor: [1200s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1205283) SystemMonitor: [1205s] Wi-Fi: not connected[0m
+[0;32mI (1205283) SystemMonitor: [1205s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1205283) SystemMonitor: [1205s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1210283) SystemMonitor: [1210s] Wi-Fi: not connected[0m
+[0;32mI (1210283) SystemMonitor: [1210s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1210283) SystemMonitor: [1210s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1215283) SystemMonitor: [1215s] Wi-Fi: not connected[0m
+[0;32mI (1215283) SystemMonitor: [1215s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1215283) SystemMonitor: [1215s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1220283) SystemMonitor: [1220s] Wi-Fi: not connected[0m
+[0;32mI (1220283) SystemMonitor: [1220s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1220283) SystemMonitor: [1220s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1225283) SystemMonitor: [1225s] Wi-Fi: not connected[0m
+[0;32mI (1225283) SystemMonitor: [1225s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1225283) SystemMonitor: [1225s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1230283) SystemMonitor: [1230s] Wi-Fi: not connected[0m
+[0;32mI (1230283) SystemMonitor: [1230s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1230283) SystemMonitor: [1230s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1235283) SystemMonitor: [1235s] Wi-Fi: not connected[0m
+[0;32mI (1235283) SystemMonitor: [1235s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1235283) SystemMonitor: [1235s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1240283) SystemMonitor: [1240s] Wi-Fi: not connected[0m
+[0;32mI (1240283) SystemMonitor: [1240s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1240283) SystemMonitor: [1240s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1245283) SystemMonitor: [1245s] Wi-Fi: not connected[0m
+[0;32mI (1245283) SystemMonitor: [1245s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1245283) SystemMonitor: [1245s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1250283) SystemMonitor: [1250s] Wi-Fi: not connected[0m
+[0;32mI (1250283) SystemMonitor: [1250s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1250283) SystemMonitor: [1250s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1255283) SystemMonitor: [1255s] Wi-Fi: not connected[0m
+[0;32mI (1255283) SystemMonitor: [1255s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1255283) SystemMonitor: [1255s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1260283) SystemMonitor: [1260s] Wi-Fi: not connected[0m
+[0;32mI (1260283) SystemMonitor: [1260s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1260283) SystemMonitor: [1260s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1265283) SystemMonitor: [1265s] Wi-Fi: not connected[0m
+[0;32mI (1265283) SystemMonitor: [1265s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1265283) SystemMonitor: [1265s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1270283) SystemMonitor: [1270s] Wi-Fi: not connected[0m
+[0;32mI (1270283) SystemMonitor: [1270s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1270283) SystemMonitor: [1270s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1275283) SystemMonitor: [1275s] Wi-Fi: not connected[0m
+[0;32mI (1275283) SystemMonitor: [1275s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1275283) SystemMonitor: [1275s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1280283) SystemMonitor: [1280s] Wi-Fi: not connected[0m
+[0;32mI (1280283) SystemMonitor: [1280s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1280283) SystemMonitor: [1280s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1285283) SystemMonitor: [1285s] Wi-Fi: not connected[0m
+[0;32mI (1285283) SystemMonitor: [1285s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1285283) SystemMonitor: [1285s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1290283) SystemMonitor: [1290s] Wi-Fi: not connected[0m
+[0;32mI (1290283) SystemMonitor: [1290s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1290283) SystemMonitor: [1290s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1295283) SystemMonitor: [1295s] Wi-Fi: not connected[0m
+[0;32mI (1295283) SystemMonitor: [1295s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1295283) SystemMonitor: [1295s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1300283) SystemMonitor: [1300s] Wi-Fi: not connected[0m
+[0;32mI (1300283) SystemMonitor: [1300s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1300283) SystemMonitor: [1300s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1305283) SystemMonitor: [1305s] Wi-Fi: not connected[0m
+[0;32mI (1305283) SystemMonitor: [1305s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1305283) SystemMonitor: [1305s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1310283) SystemMonitor: [1310s] Wi-Fi: not connected[0m
+[0;32mI (1310283) SystemMonitor: [1310s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1310283) SystemMonitor: [1310s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1315283) SystemMonitor: [1315s] Wi-Fi: not connected[0m
+[0;32mI (1315283) SystemMonitor: [1315s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1315283) SystemMonitor: [1315s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1320283) SystemMonitor: [1320s] Wi-Fi: not connected[0m
+[0;32mI (1320283) SystemMonitor: [1320s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1320283) SystemMonitor: [1320s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1325283) SystemMonitor: [1325s] Wi-Fi: not connected[0m
+[0;32mI (1325283) SystemMonitor: [1325s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1325283) SystemMonitor: [1325s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1330283) SystemMonitor: [1330s] Wi-Fi: not connected[0m
+[0;32mI (1330283) SystemMonitor: [1330s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1330283) SystemMonitor: [1330s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1335283) SystemMonitor: [1335s] Wi-Fi: not connected[0m
+[0;32mI (1335283) SystemMonitor: [1335s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1335283) SystemMonitor: [1335s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1340283) SystemMonitor: [1340s] Wi-Fi: not connected[0m
+[0;32mI (1340283) SystemMonitor: [1340s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1340283) SystemMonitor: [1340s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1345283) SystemMonitor: [1345s] Wi-Fi: not connected[0m
+[0;32mI (1345283) SystemMonitor: [1345s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1345283) SystemMonitor: [1345s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1350283) SystemMonitor: [1350s] Wi-Fi: not connected[0m
+[0;32mI (1350283) SystemMonitor: [1350s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1350283) SystemMonitor: [1350s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1355283) SystemMonitor: [1355s] Wi-Fi: not connected[0m
+[0;32mI (1355283) SystemMonitor: [1355s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1355283) SystemMonitor: [1355s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1360283) SystemMonitor: [1360s] Wi-Fi: not connected[0m
+[0;32mI (1360283) SystemMonitor: [1360s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1360283) SystemMonitor: [1360s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1365283) SystemMonitor: [1365s] Wi-Fi: not connected[0m
+[0;32mI (1365283) SystemMonitor: [1365s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1365283) SystemMonitor: [1365s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1370283) SystemMonitor: [1370s] Wi-Fi: not connected[0m
+[0;32mI (1370283) SystemMonitor: [1370s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1370283) SystemMonitor: [1370s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1375283) SystemMonitor: [1375s] Wi-Fi: not connected[0m
+[0;32mI (1375283) SystemMonitor: [1375s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1375283) SystemMonitor: [1375s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1380283) SystemMonitor: [1380s] Wi-Fi: not connected[0m
+[0;32mI (1380283) SystemMonitor: [1380s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1380283) SystemMonitor: [1380s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1385283) SystemMonitor: [1385s] Wi-Fi: not connected[0m
+[0;32mI (1385283) SystemMonitor: [1385s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1385283) SystemMonitor: [1385s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1390283) SystemMonitor: [1390s] Wi-Fi: not connected[0m
+[0;32mI (1390283) SystemMonitor: [1390s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1390283) SystemMonitor: [1390s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1395283) SystemMonitor: [1395s] Wi-Fi: not connected[0m
+[0;32mI (1395283) SystemMonitor: [1395s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1395283) SystemMonitor: [1395s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1400283) SystemMonitor: [1400s] Wi-Fi: not connected[0m
+[0;32mI (1400283) SystemMonitor: [1400s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1400283) SystemMonitor: [1400s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1405283) SystemMonitor: [1405s] Wi-Fi: not connected[0m
+[0;32mI (1405283) SystemMonitor: [1405s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1405283) SystemMonitor: [1405s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1410283) SystemMonitor: [1410s] Wi-Fi: not connected[0m
+[0;32mI (1410283) SystemMonitor: [1410s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1410283) SystemMonitor: [1410s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1415283) SystemMonitor: [1415s] Wi-Fi: not connected[0m
+[0;32mI (1415283) SystemMonitor: [1415s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1415283) SystemMonitor: [1415s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1420283) SystemMonitor: [1420s] Wi-Fi: not connected[0m
+[0;32mI (1420283) SystemMonitor: [1420s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1420283) SystemMonitor: [1420s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1425283) SystemMonitor: [1425s] Wi-Fi: not connected[0m
+[0;32mI (1425283) SystemMonitor: [1425s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1425283) SystemMonitor: [1425s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1430283) SystemMonitor: [1430s] Wi-Fi: not connected[0m
+[0;32mI (1430283) SystemMonitor: [1430s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1430283) SystemMonitor: [1430s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1435283) SystemMonitor: [1435s] Wi-Fi: not connected[0m
+[0;32mI (1435283) SystemMonitor: [1435s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1435283) SystemMonitor: [1435s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1440283) SystemMonitor: [1440s] Wi-Fi: not connected[0m
+[0;32mI (1440283) SystemMonitor: [1440s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1440283) SystemMonitor: [1440s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1445283) SystemMonitor: [1445s] Wi-Fi: not connected[0m
+[0;32mI (1445283) SystemMonitor: [1445s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1445283) SystemMonitor: [1445s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1450283) SystemMonitor: [1450s] Wi-Fi: not connected[0m
+[0;32mI (1450283) SystemMonitor: [1450s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1450283) SystemMonitor: [1450s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1455283) SystemMonitor: [1455s] Wi-Fi: not connected[0m
+[0;32mI (1455283) SystemMonitor: [1455s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1455283) SystemMonitor: [1455s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1460283) SystemMonitor: [1460s] Wi-Fi: not connected[0m
+[0;32mI (1460283) SystemMonitor: [1460s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1460283) SystemMonitor: [1460s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1465283) SystemMonitor: [1465s] Wi-Fi: not connected[0m
+[0;32mI (1465283) SystemMonitor: [1465s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1465283) SystemMonitor: [1465s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1470283) SystemMonitor: [1470s] Wi-Fi: not connected[0m
+[0;32mI (1470283) SystemMonitor: [1470s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1470283) SystemMonitor: [1470s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1475283) SystemMonitor: [1475s] Wi-Fi: not connected[0m
+[0;32mI (1475283) SystemMonitor: [1475s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1475283) SystemMonitor: [1475s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1480283) SystemMonitor: [1480s] Wi-Fi: not connected[0m
+[0;32mI (1480283) SystemMonitor: [1480s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1480283) SystemMonitor: [1480s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1485283) SystemMonitor: [1485s] Wi-Fi: not connected[0m
+[0;32mI (1485283) SystemMonitor: [1485s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1485283) SystemMonitor: [1485s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1490283) SystemMonitor: [1490s] Wi-Fi: not connected[0m
+[0;32mI (1490283) SystemMonitor: [1490s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1490283) SystemMonitor: [1490s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1495283) SystemMonitor: [1495s] Wi-Fi: not connected[0m
+[0;32mI (1495283) SystemMonitor: [1495s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1495283) SystemMonitor: [1495s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1500283) SystemMonitor: [1500s] Wi-Fi: not connected[0m
+[0;32mI (1500283) SystemMonitor: [1500s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1500283) SystemMonitor: [1500s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1505283) SystemMonitor: [1505s] Wi-Fi: not connected[0m
+[0;32mI (1505283) SystemMonitor: [1505s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1505283) SystemMonitor: [1505s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1510283) SystemMonitor: [1510s] Wi-Fi: not connected[0m
+[0;32mI (1510283) SystemMonitor: [1510s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1510283) SystemMonitor: [1510s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1515283) SystemMonitor: [1515s] Wi-Fi: not connected[0m
+[0;32mI (1515283) SystemMonitor: [1515s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1515283) SystemMonitor: [1515s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1520283) SystemMonitor: [1520s] Wi-Fi: not connected[0m
+[0;32mI (1520283) SystemMonitor: [1520s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1520283) SystemMonitor: [1520s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1525283) SystemMonitor: [1525s] Wi-Fi: not connected[0m
+[0;32mI (1525283) SystemMonitor: [1525s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1525283) SystemMonitor: [1525s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1530283) SystemMonitor: [1530s] Wi-Fi: not connected[0m
+[0;32mI (1530283) SystemMonitor: [1530s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1530283) SystemMonitor: [1530s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1535283) SystemMonitor: [1535s] Wi-Fi: not connected[0m
+[0;32mI (1535283) SystemMonitor: [1535s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1535283) SystemMonitor: [1535s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1540283) SystemMonitor: [1540s] Wi-Fi: not connected[0m
+[0;32mI (1540283) SystemMonitor: [1540s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1540283) SystemMonitor: [1540s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1545283) SystemMonitor: [1545s] Wi-Fi: not connected[0m
+[0;32mI (1545283) SystemMonitor: [1545s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1545283) SystemMonitor: [1545s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1550283) SystemMonitor: [1550s] Wi-Fi: not connected[0m
+[0;32mI (1550283) SystemMonitor: [1550s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1550283) SystemMonitor: [1550s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1555283) SystemMonitor: [1555s] Wi-Fi: not connected[0m
+[0;32mI (1555283) SystemMonitor: [1555s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1555283) SystemMonitor: [1555s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1560283) SystemMonitor: [1560s] Wi-Fi: not connected[0m
+[0;32mI (1560283) SystemMonitor: [1560s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1560283) SystemMonitor: [1560s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1565283) SystemMonitor: [1565s] Wi-Fi: not connected[0m
+[0;32mI (1565283) SystemMonitor: [1565s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1565283) SystemMonitor: [1565s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1570283) SystemMonitor: [1570s] Wi-Fi: not connected[0m
+[0;32mI (1570283) SystemMonitor: [1570s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1570283) SystemMonitor: [1570s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1575283) SystemMonitor: [1575s] Wi-Fi: not connected[0m
+[0;32mI (1575283) SystemMonitor: [1575s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1575283) SystemMonitor: [1575s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1580283) SystemMonitor: [1580s] Wi-Fi: not connected[0m
+[0;32mI (1580283) SystemMonitor: [1580s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1580283) SystemMonitor: [1580s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1585283) SystemMonitor: [1585s] Wi-Fi: not connected[0m
+[0;32mI (1585283) SystemMonitor: [1585s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1585283) SystemMonitor: [1585s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1590283) SystemMonitor: [1590s] Wi-Fi: not connected[0m
+[0;32mI (1590283) SystemMonitor: [1590s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1590283) SystemMonitor: [1590s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1595283) SystemMonitor: [1595s] Wi-Fi: not connected[0m
+[0;32mI (1595283) SystemMonitor: [1595s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1595283) SystemMonitor: [1595s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1600283) SystemMonitor: [1600s] Wi-Fi: not connected[0m
+[0;32mI (1600283) SystemMonitor: [1600s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1600283) SystemMonitor: [1600s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1605283) SystemMonitor: [1605s] Wi-Fi: not connected[0m
+[0;32mI (1605283) SystemMonitor: [1605s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1605283) SystemMonitor: [1605s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1610283) SystemMonitor: [1610s] Wi-Fi: not connected[0m
+[0;32mI (1610283) SystemMonitor: [1610s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1610283) SystemMonitor: [1610s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1615283) SystemMonitor: [1615s] Wi-Fi: not connected[0m
+[0;32mI (1615283) SystemMonitor: [1615s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1615283) SystemMonitor: [1615s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1620283) SystemMonitor: [1620s] Wi-Fi: not connected[0m
+[0;32mI (1620283) SystemMonitor: [1620s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1620283) SystemMonitor: [1620s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1625283) SystemMonitor: [1625s] Wi-Fi: not connected[0m
+[0;32mI (1625283) SystemMonitor: [1625s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1625283) SystemMonitor: [1625s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1630283) SystemMonitor: [1630s] Wi-Fi: not connected[0m
+[0;32mI (1630283) SystemMonitor: [1630s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1630283) SystemMonitor: [1630s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1635283) SystemMonitor: [1635s] Wi-Fi: not connected[0m
+[0;32mI (1635283) SystemMonitor: [1635s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1635283) SystemMonitor: [1635s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1640283) SystemMonitor: [1640s] Wi-Fi: not connected[0m
+[0;32mI (1640283) SystemMonitor: [1640s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1640283) SystemMonitor: [1640s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1645283) SystemMonitor: [1645s] Wi-Fi: not connected[0m
+[0;32mI (1645283) SystemMonitor: [1645s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1645283) SystemMonitor: [1645s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1650283) SystemMonitor: [1650s] Wi-Fi: not connected[0m
+[0;32mI (1650283) SystemMonitor: [1650s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1650283) SystemMonitor: [1650s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1655283) SystemMonitor: [1655s] Wi-Fi: not connected[0m
+[0;32mI (1655283) SystemMonitor: [1655s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1655283) SystemMonitor: [1655s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1660283) SystemMonitor: [1660s] Wi-Fi: not connected[0m
+[0;32mI (1660283) SystemMonitor: [1660s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1660283) SystemMonitor: [1660s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1665283) SystemMonitor: [1665s] Wi-Fi: not connected[0m
+[0;32mI (1665283) SystemMonitor: [1665s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1665283) SystemMonitor: [1665s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1670283) SystemMonitor: [1670s] Wi-Fi: not connected[0m
+[0;32mI (1670283) SystemMonitor: [1670s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1670283) SystemMonitor: [1670s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1675283) SystemMonitor: [1675s] Wi-Fi: not connected[0m
+[0;32mI (1675283) SystemMonitor: [1675s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1675283) SystemMonitor: [1675s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1680283) SystemMonitor: [1680s] Wi-Fi: not connected[0m
+[0;32mI (1680283) SystemMonitor: [1680s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1680283) SystemMonitor: [1680s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1685283) SystemMonitor: [1685s] Wi-Fi: not connected[0m
+[0;32mI (1685283) SystemMonitor: [1685s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1685283) SystemMonitor: [1685s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1690283) SystemMonitor: [1690s] Wi-Fi: not connected[0m
+[0;32mI (1690283) SystemMonitor: [1690s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1690283) SystemMonitor: [1690s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1695283) SystemMonitor: [1695s] Wi-Fi: not connected[0m
+[0;32mI (1695283) SystemMonitor: [1695s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1695283) SystemMonitor: [1695s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1700283) SystemMonitor: [1700s] Wi-Fi: not connected[0m
+[0;32mI (1700283) SystemMonitor: [1700s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1700283) SystemMonitor: [1700s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1705283) SystemMonitor: [1705s] Wi-Fi: not connected[0m
+[0;32mI (1705283) SystemMonitor: [1705s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1705283) SystemMonitor: [1705s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1710283) SystemMonitor: [1710s] Wi-Fi: not connected[0m
+[0;32mI (1710283) SystemMonitor: [1710s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1710283) SystemMonitor: [1710s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1715283) SystemMonitor: [1715s] Wi-Fi: not connected[0m
+[0;32mI (1715283) SystemMonitor: [1715s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1715283) SystemMonitor: [1715s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1720283) SystemMonitor: [1720s] Wi-Fi: not connected[0m
+[0;32mI (1720283) SystemMonitor: [1720s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1720283) SystemMonitor: [1720s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1725283) SystemMonitor: [1725s] Wi-Fi: not connected[0m
+[0;32mI (1725283) SystemMonitor: [1725s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1725283) SystemMonitor: [1725s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1730283) SystemMonitor: [1730s] Wi-Fi: not connected[0m
+[0;32mI (1730283) SystemMonitor: [1730s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1730283) SystemMonitor: [1730s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1735283) SystemMonitor: [1735s] Wi-Fi: not connected[0m
+[0;32mI (1735283) SystemMonitor: [1735s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1735283) SystemMonitor: [1735s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1740283) SystemMonitor: [1740s] Wi-Fi: not connected[0m
+[0;32mI (1740283) SystemMonitor: [1740s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1740283) SystemMonitor: [1740s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1745283) SystemMonitor: [1745s] Wi-Fi: not connected[0m
+[0;32mI (1745283) SystemMonitor: [1745s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1745283) SystemMonitor: [1745s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1750283) SystemMonitor: [1750s] Wi-Fi: not connected[0m
+[0;32mI (1750283) SystemMonitor: [1750s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1750283) SystemMonitor: [1750s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1755283) SystemMonitor: [1755s] Wi-Fi: not connected[0m
+[0;32mI (1755283) SystemMonitor: [1755s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1755283) SystemMonitor: [1755s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1760283) SystemMonitor: [1760s] Wi-Fi: not connected[0m
+[0;32mI (1760283) SystemMonitor: [1760s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1760283) SystemMonitor: [1760s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1765283) SystemMonitor: [1765s] Wi-Fi: not connected[0m
+[0;32mI (1765283) SystemMonitor: [1765s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1765283) SystemMonitor: [1765s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1770283) SystemMonitor: [1770s] Wi-Fi: not connected[0m
+[0;32mI (1770283) SystemMonitor: [1770s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1770283) SystemMonitor: [1770s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1775283) SystemMonitor: [1775s] Wi-Fi: not connected[0m
+[0;32mI (1775283) SystemMonitor: [1775s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1775283) SystemMonitor: [1775s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1780283) SystemMonitor: [1780s] Wi-Fi: not connected[0m
+[0;32mI (1780283) SystemMonitor: [1780s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1780283) SystemMonitor: [1780s] Heap: free=455940 bytes | min ever=451308 bytes[0m
+[0;33mW (1785283) SystemMonitor: [1785s] Wi-Fi: not connected[0m
+[0;32mI (1785283) SystemMonitor: [1785s] I2C: MPU6050 OK (WHO_AM_I = 0x68)[0m
+[0;32mI (1785283) SystemMonitor: [1785s] Heap: free=455940 bytes | min ever=451308 bytes[0m
