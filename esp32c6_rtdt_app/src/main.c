@@ -32,6 +32,7 @@ void app_main(void)
     // start with default values
     task_config_t task_cfg; 
 
+    task_cfg.start = false; // keep it idle
     task_cfg.update_rate_ms    = 50;
     task_cfg.accel_noise_floor = 0.5;
     task_cfg.cfg = (mpu6050_config_t){
@@ -40,7 +41,7 @@ void app_main(void)
         .dlpf_cfg    = 3,      // DLPF bandwidth: ~44Hz accel / ~42Hz gyro
         .smplrt_div  = 0       // Sample rate = 1kHz / (1 + 0) = 1kHz
     };
-
+    
     // initialize the I2C interface
     res = i2c_master_init(); 
     if (res != ESP_OK) {
@@ -81,6 +82,15 @@ void app_main(void)
         2048,
         &task_cfg,
         2,
+        NULL
+    );
+
+    xTaskCreate(
+        command_listener_task,
+        "command_listener",
+        4096,
+        &task_cfg,
+        4,
         NULL
     );
 }

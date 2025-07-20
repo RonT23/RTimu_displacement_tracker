@@ -1,0 +1,421 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803dee
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16bc
+load:0x4086c110,len:0xdf4
+load:0x4086e610,len:0x307c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 20 2025 16:47:39[0m
+[0;32mI (23) boot: chip revision: v0.1[0m
+[0;32mI (23) boot: efuse block revision: v0.3[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (24) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (25) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (27) boot: End of partition table[0m
+[0;32mI (27) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09804h ( 38916) map[0m
+[0;32mI (36) esp_image: segment 1: paddr=0001982c vaddr=40800000 size=067ech ( 26604) load[0m
+[0;32mI (42) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=120fch ( 73980) map[0m
+[0;32mI (57) esp_image: segment 3: paddr=00032124 vaddr=408067ec size=05be0h ( 23520) load[0m
+[0;32mI (62) esp_image: segment 4: paddr=00037d0c vaddr=4080c3d0 size=0169ch (  5788) load[0m
+[0;32mI (67) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (67) boot: Disabling RNG early entropy source...[0m
+[0;32mI (68) cpu_start: Unicore app[0m
+[0;32mI (77) cpu_start: Pro cpu start user code[0m
+[0;32mI (77) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (78) app_init: Application information:[0m
+[0;32mI (78) app_init: Project name:     esp32c6_rtdt_app[0m
+[0;32mI (78) app_init: App version:      8cb00c8-dirty[0m
+[0;32mI (78) app_init: Compile time:     Jul 20 2025 16:47:37[0m
+[0;32mI (79) app_init: ELF file SHA256:  69294d837...[0m
+[0;32mI (79) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (79) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (79) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (79) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (80) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (80) heap_init: At 4080E9C0 len 0006DC50 (439 KiB): RAM[0m
+[0;32mI (80) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (80) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (81) spi_flash: detected chip: generic[0m
+[0;32mI (82) spi_flash: flash io: dio[0m
+[0;33mW (82) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (82) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (83) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (83) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (84) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (84) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (85) main_task: Started on CPU0[0m
+[0;32mI (85) main_task: Calling app_main()[0m
+[0;32mI (85) System: Initialized[0m
+[0;32mI (85) SystemMonitor: Uptime=0 s[0m
+[0;32mI (85) SystemMonitor: MPU6050 OK[0m
+[0;32mI (85) SystemMonitor: Heap free=454876 bytes[0m
+[0;32mI (85) main_task: Returned from app_main()[0m
+[0;32mI (1085) Calibration: 3.48, 8.10, -0.95[0m
+[0;32mI (1085) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1085) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1085) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1135) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1135) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1135) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1185) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1185) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1185) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1235) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1235) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1235) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1285) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1285) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1285) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1335) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1335) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1335) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1385) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1385) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1385) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1435) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1435) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1435) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1485) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1485) Velocity: -0.00,-0.00,-0.00[0m
+[0;32mI (1485) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1535) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1535) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1535) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1585) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1585) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1585) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1635) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1635) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1635) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1685) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1685) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1685) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1735) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1735) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1735) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1785) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1785) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1785) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1835) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1835) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1835) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1885) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1885) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1885) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1935) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1935) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1935) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (1985) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (1985) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (1985) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2035) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2035) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2035) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2085) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2085) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2085) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2135) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2135) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2135) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2185) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2185) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2185) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2235) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2235) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2235) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2285) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2285) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2285) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2335) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2335) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2335) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2385) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2385) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2385) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2435) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2435) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2435) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2485) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2485) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2485) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2535) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2535) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2535) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2585) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2585) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2585) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2635) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2635) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2635) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2685) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2685) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2685) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2735) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2735) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2735) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2785) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2785) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2785) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2835) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2835) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2835) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2885) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2885) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2885) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2935) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2935) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2935) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (2985) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (2985) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (2985) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3035) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3035) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3035) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3085) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3085) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3085) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3135) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3135) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3135) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3185) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3185) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3185) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3235) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3235) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3235) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3285) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3285) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3285) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3335) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3335) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3335) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3385) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3385) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3385) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3435) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3435) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3435) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3485) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3485) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3485) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3535) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3535) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3535) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3585) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3585) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3585) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3635) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3635) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3635) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3685) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3685) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3685) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3735) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3735) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3735) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3785) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3785) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3785) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3835) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3835) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3835) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3885) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3885) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3885) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3935) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3935) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3935) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (3985) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (3985) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (3985) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4035) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4035) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4035) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4085) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4085) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4085) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4135) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4135) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4135) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4185) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4185) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4185) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4235) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4235) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4235) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4285) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4285) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4285) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4335) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4335) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4335) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4385) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4385) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4385) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4435) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4435) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4435) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4485) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4485) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4485) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4535) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4535) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4535) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4585) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4585) Velocity: 0.00,0.00,0.00[0m
+[0;32mI (4585) Displacement: -0.00,-0.00,-0.00[0m
+>>>>>>>>>>>>>>50
+
+[0;32mI (4635) Acceleration: 0.00,0.00,0.00[0m
+[0;32mI (4635) Velocity: 0.00,0.00,0.00[0m
+

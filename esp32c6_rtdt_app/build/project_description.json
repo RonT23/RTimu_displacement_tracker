@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp32c6_rtdt_app",
-    "project_version":    "39aa84f-dirty",
+    "project_version":    "8cb00c8-dirty",
     "project_path":       "/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app",
     "idf_path":           "/home/ronaldo/esp/esp-idf",
     "build_dir":          "/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build",

@@ -2,6 +2,7 @@
 #define APP_TASKS_H
 
 #include <math.h>
+#include <string.h>
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -13,7 +14,8 @@
 #include "driver/i2c.h" 
 
 #include "mpu6050.h"
-#include "kalman1d.h"
+
+#define CMD_BUF_SIZE                128
 
 #define I2C_MASTER_SDA_IO           19      // GPIO for Master I2C data line (SDA)
 #define I2C_MASTER_SCL_IO           20      // GPIO for Master I2C clock line (SCL)
@@ -28,6 +30,7 @@
 typedef struct {
     uint32_t update_rate_ms;
     float accel_noise_floor;
+    bool start;
     mpu6050_config_t cfg;
 } task_config_t;
 
@@ -76,5 +79,7 @@ void process_accel_data(mpu6050_data_t data, mpu6050_cal_data_t bias, float nois
  * @param pvParameters   Unused here
  */
 void system_monitor_task(void *pvParameters);
+
+void command_listener_task(void *pvParameters);
 
 #endif // APP_TASKS_H

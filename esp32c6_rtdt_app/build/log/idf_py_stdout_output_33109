@@ -1,0 +1,81 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40803dee
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16bc
+load:0x4086c110,len:0xdf4
+load:0x4086e610,len:0x307c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Jul 20 2025 16:47:39[0m
+[0;32mI (23) boot: chip revision: v0.1[0m
+[0;32mI (23) boot: efuse block revision: v0.3[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (24) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (25) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (27) boot: End of partition table[0m
+[0;32mI (27) esp_image: segment 0: paddr=00010020 vaddr=42018020 size=09ea0h ( 40608) map[0m
+[0;32mI (36) esp_image: segment 1: paddr=00019ec8 vaddr=40800000 size=06150h ( 24912) load[0m
+[0;32mI (42) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=1482ch ( 84012) map[0m
+[0;32mI (58) esp_image: segment 3: paddr=00034854 vaddr=40806150 size=06278h ( 25208) load[0m
+[0;32mI (64) esp_image: segment 4: paddr=0003aad4 vaddr=4080c3d0 size=016a4h (  5796) load[0m
+[0;32mI (69) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (69) boot: Disabling RNG early entropy source...[0m
+[0;32mI (70) cpu_start: Unicore app[0m
+[0;32mI (80) cpu_start: Pro cpu start user code[0m
+[0;32mI (80) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (80) app_init: Application information:[0m
+[0;32mI (80) app_init: Project name:     esp32c6_rtdt_app[0m
+[0;32mI (80) app_init: App version:      8cb00c8-dirty[0m
+[0;32mI (81) app_init: Compile time:     Jul 20 2025 16:47:37[0m
+[0;32mI (81) app_init: ELF file SHA256:  3dd688e6e...[0m
+[0;32mI (81) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (81) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (81) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (82) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (82) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (82) heap_init: At 4080E9D0 len 0006DC40 (439 KiB): RAM[0m
+[0;32mI (82) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (83) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (84) spi_flash: detected chip: generic[0m
+[0;32mI (84) spi_flash: flash io: dio[0m
+[0;33mW (84) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (85) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (85) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (86) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (86) coexist: coex firmware version: 7b9a184[0m
+[0;32mI (86) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (87) main_task: Started on CPU0[0m
+[0;32mI (87) main_task: Calling app_main()[0m
+[0;32mI (87) System: Initialized[0m
+[0;32mI (87) SystemMonitor: Uptime=0 s[0m
+[0;32mI (87) SystemMonitor: MPU6050 OK[0m
+[0;32mI (87) SystemMonitor: Heap free=454860 bytes[0m
+[0;32mI (87) main_task: Returned from app_main()[0m
+[0;32mI (1087) Calibration: 3.49, 7.91, -1.32[0m
+[0;32mI (30087) SystemMonitor: Uptime=30 s[0m
+[0;32mI (30087) SystemMonitor: MPU6050 OK[0m
+[0;32mI (30087) SystemMonitor: Heap free=454424 bytes[0m
+[0;32mI (60087) SystemMonitor: Uptime=60 s[0m
+[0;32mI (60087) SystemMonitor: MPU6050 OK[0m
+[0;32mI (60087) SystemMonitor: Heap free=454424 bytes[0m
+[0;32mI (90087) SystemMonitor: Uptime=90 s[0m
+[0;32mI (90087) SystemMonitor: MPU6050 OK[0m
+[0;32mI (90087) SystemMonitor: Heap free=454424 bytes[0m
+[0;32mI (120087) SystemMonitor: Uptime=120 s[0m
+[0;32mI (120087) SystemMonitor: MPU6050 OK[0m
+[0;32mI (120087) SystemMonitor: Heap free=454424 bytes[0m
+[0;32mI (150087) SystemMonitor: Uptime=150 s[0m
+[0;32mI (150087) SystemMonitor: MPU6050 OK[0m
+[0;32mI (150087) SystemMonitor: Heap free=454424 bytes[0m
+[0;32mI (152287) CommandListener: Received: [0m
+[1;31mE (152287) CommandListener: Unknown command: [0m
+

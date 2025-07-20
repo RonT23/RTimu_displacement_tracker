@@ -45,24 +45,27 @@ void accel_readout_task(void *pvParameters) {
     int64_t last_time = esp_timer_get_time();
 
     while (1) {
-        // Read acceleration
-        res = mpu6050_read_accel(I2C_NUM_0, &accel_data);
+        if (config->start) {
 
-        // measure integration time difference
-        int64_t now = esp_timer_get_time(); // in microseconds
-        float dt = (now - last_time) / 1e6f;
-        last_time = now;
+            // Read acceleration
+            res = mpu6050_read_accel(I2C_NUM_0, &accel_data);
 
-        process_accel_data(accel_data, accel_bias_data, config->accel_noise_floor, dt, &state);
+            // measure integration time difference
+            int64_t now = esp_timer_get_time(); // in microseconds
+            float dt = (now - last_time) / 1e6f;
+            last_time = now;
 
-        if (res == ESP_OK) {
-            ESP_LOGI("Acceleration", "%.2f,%.2f,%.2f", state.ax, state.ay, state.az);
-            ESP_LOGI("Velocity", "%.2f,%.2f,%.2f", state.vx, state.vy, state.vz);
-            ESP_LOGI("Displacement", "%.2f,%.2f,%.2f", state.dx, state.dy, state.dz);
-        } else {
-            ESP_LOGW("ReadOut", "Failed: %s", esp_err_to_name(res));
-        }
+            process_accel_data(accel_data, accel_bias_data, config->accel_noise_floor, dt, &state);
 
+            if (res == ESP_OK) {
+                ESP_LOGI("Acceleration", "%.2f,%.2f,%.2f", state.ax, state.ay, state.az);
+                ESP_LOGI("Velocity", "%.2f,%.2f,%.2f", state.vx, state.vy, state.vz);
+                ESP_LOGI("Displacement", "%.2f,%.2f,%.2f", state.dx, state.dy, state.dz);
+            } else {
+                ESP_LOGW("ReadOut", "Failed: %s", esp_err_to_name(res));
+            }
+
+        } 
         vTaskDelay(pdMS_TO_TICKS(config->update_rate_ms)); // update rate
     }
 }
@@ -157,5 +160,60 @@ void system_monitor_task(void *pvParameters) {
         ESP_LOGI("SystemMonitor", "Heap free=%u bytes", heap_free);
 
         vTaskDelay(pdMS_TO_TICKS(30000)); // repeat every 30 seconds
+    }
+}
+
+void command_listener_task(void *pvParameters) {
+    char buf[CMD_BUF_SIZE];
+    task_config_t *config = (task_config_t *)pvParameters;
+
+    while (1) {
+        if (fgets(buf, CMD_BUF_SIZE, stdin) != NULL) {
+            buf[strcspn(buf, "\r\n")] = 0; 
+
+            ESP_LOGI("CommandListener", "Received: %s", buf);
+
+            if (strncmp(buf, "reset", 5) == 0) {
+                esp_restart();
+            
+            } else if (strncmp(buf, "set_rate:", 9) == 0) {
+            
+                int rate = atoi(buf + 9);
+                config->update_rate_ms = rate;
+                ESP_LOGI("CommandListener", "Set Update Rate: %d", rate);
+            
+            }  else if (strncmp(buf, "set_accel_noise_floor:", 23) == 0) {
+            
+                float noise = atof(buf + 23);
+                config->accel_noise_floor = noise;
+                ESP_LOGI("CommandListener", "Set Accel. Noice Floor: %.2f", noise);
+            
+            }  else if (strncmp(buf, "set_mpu6050_config:", 19) == 0) {
+                int a, g, d, s;
+
+                if (sscanf(buf + 19, "%d,%d,%d,%d", &a, &g, &d, &s) == 4) {
+                    config->cfg.accel_range = a;
+                    config->cfg.gyro_range  = g;
+                    config->cfg.dlpf_cfg    = d;
+                    config->cfg.smplrt_div  = s;
+
+                    mpu6050_config(I2C_NUM_0, &config->cfg);
+                    ESP_LOGI("CommandListener", "MPU6050 reconfigured: a=%d, g=%d, d=%d, s=%d", a, g, d, s);
+                } else {
+                    ESP_LOGE("CommandListener", "Invalid config string");
+                }
+
+            } else if (strncmp(buf, "start", 5) == 0) {
+                config->start = true;
+                ESP_LOGI("CommandListener", "Starting the readout task");
+            } else if (strncmp(buf, "stop", 4) == 0) {
+                config->start = false;
+                ESP_LOGI("CommandListener", "Stoping the readout taks");
+            } else {
+                ESP_LOGE("CommandListener", "Unknown command: %s\n", buf);
+            }
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(100)); 
     }
 }

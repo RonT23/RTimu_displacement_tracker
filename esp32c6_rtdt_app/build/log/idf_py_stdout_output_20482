@@ -1,0 +1,18 @@
+[1/5] cd /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/esp-idf/esptool_py && /home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/ronaldo/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/partition_table/partition-table.bin /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/esp32c6_rtdt_app.bin
+esp32c6_rtdt_app.bin binary size 0x2f120 bytes. Smallest app partition is 0x100000 bytes. 0xd0ee0 bytes (82%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/bootloader/esp-idf/esptool_py && /home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/ronaldo/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/bootloader/bootloader.bin
+Bootloader binary size 0x5610 bytes. 0x29f0 bytes (33%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/ronaldo/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ronaldo/esp/esp-idf -D "SERIAL_TOOL=/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/home/ronaldo/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build -P /home/ronaldo/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32c6 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 esp32c6_rtdt_app.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.0
+Serial port /dev/ttyACM0
+
+A fatal error occurred: Could not open /dev/ttyACM0, the port is busy or doesn't exist.
+([Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0')
+
+FAILED: CMakeFiles/flash /home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build/CMakeFiles/flash 
+cd /home/ronaldo/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/ronaldo/esp/esp-idf -D "SERIAL_TOOL=/home/ronaldo/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/home/ronaldo/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/ronaldo/esp/RTimu_displacement_tracker/esp32c6_rtdt_app/build -P /home/ronaldo/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.
