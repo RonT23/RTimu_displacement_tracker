@@ -58,12 +58,11 @@ The ESP32-C6 Mini connects to a host computer over USB for data transfer and pow
 - Embedded source code – Firmware for data acquisition and processing as provided in this repository.
 - Python scripts – For data visualization and post-processing.
 
-To install the ESP-IDF software please follow the guide provided by the official webpage :
-Once the ESP-IDF tools are installed successfully, make a new project: 
+To install the ESP-IDF software please follow the guide provided by the official [webpage](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html). Once the ESP-IDF tools are installed successfully, make a new project by adding this repository.  
 
 ## Programming the Device 
 
-To program the device with the provided source code use the ESP-IDF tools:
+To program the ESP32-C6 device with the provided source code use the ESP-IDF tools:
 
 ```shell
 cp -r RTimu_displacement_tracker/esp32_rtdt_app ~/esp
@@ -74,8 +73,14 @@ idf.py build
 idf.py -p /dev/ttyACM0 flash
 ```
 
-## Launch the Visualization UI
+## Build the UI
 
-To build the executable application from the Python script provided here 
+To build the executable application from the Python script provided here. For Linux run:
 
+```shell
+cd disp_monitor_ui
+chmod +x build.sh
+./build.sh
 ```
+
+For windows users use the `build.bat` script simillarly. 
