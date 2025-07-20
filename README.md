@@ -62,7 +62,7 @@ To install the ESP-IDF software please follow the guide provided by the official
 
 ## Programming the Device 
 
-To program the ESP32-C6 device with the provided source code use the ESP-IDF tools:
+To program the ESP32-C6 device with the provided source code, use the ESP-IDF tools:
 
 ```shell
 cp -r RTimu_displacement_tracker/esp32_rtdt_app ~/esp
@@ -75,7 +75,7 @@ idf.py -p /dev/ttyACM0 flash
 
 ## Build the UI
 
-To build the executable application from the Python script provided here. For Linux run:
+To build the executable application from the provided Python script, run the following commands on a Linux terminal:
 
 ```shell
 cd disp_monitor_ui
