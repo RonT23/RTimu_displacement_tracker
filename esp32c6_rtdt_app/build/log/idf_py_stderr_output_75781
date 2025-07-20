@@ -1,5 +1,0 @@
-[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
-[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
-[0;33m--- 0x42004f5a: __esp_system_init_fn_sleep_clock_startup_init at /home/ronaldo/esp/esp-idf/components/esp_hw_support/lowpower/port/esp32c6/sleep_clock.c:107
-[0m
-[0m
