@@ -83,11 +83,11 @@ class App(tk.Tk):
         self.max_points     = 100
 
         self.accel_range = 20      
-        self.veloc_range = 100    
+        self.veloc_range = 10    
         self.displ_range = 10     
 
         self.plot_width     = 1200
-        self.plot_height    = 300
+        self.plot_height    = 315
 
         # Init buffers for all 3 plot types
         self.accel_x = [0] * self.max_points
@@ -181,10 +181,9 @@ class App(tk.Tk):
             return [self.plot_height / 2 - (y / y_range * self.plot_height / 2) for y in data]
 
         def get_coords(data):
-            x_coords = [
+            return [
                 40 + i * (self.plot_width - 40) / self.max_points for i in range(len(data))
             ]
-            return x_coords
 
         def flatten(xs, ys):
             return [coord for pair in zip(xs, ys) for coord in pair]
@@ -197,14 +196,27 @@ class App(tk.Tk):
         self.canvas_displ.coords(self.line_z_disp, *flatten(x_coords, scale(self.disp_z, self.displ_range)))
 
         # Acceleration
-        self.canvas_accel.coords(self.line_x_disp, *flatten(x_coords, scale(self.accel_x, self.accel_range)))
-        self.canvas_accel.coords(self.line_y_disp, *flatten(x_coords, scale(self.accel_y, self.accel_range)))
-        self.canvas_accel.coords(self.line_z_disp, *flatten(x_coords, scale(self.accel_z, self.accel_range)))
+        self.canvas_accel.coords(self.line_x_acc, *flatten(x_coords, scale(self.accel_x, self.accel_range)))
+        self.canvas_accel.coords(self.line_y_acc, *flatten(x_coords, scale(self.accel_y, self.accel_range)))
+        self.canvas_accel.coords(self.line_z_acc, *flatten(x_coords, scale(self.accel_z, self.accel_range)))
 
         # Velocity
-        self.canvas_veloc.coords(self.line_x_disp, *flatten(x_coords, scale(self.vel_x, self.veloc_range)))
-        self.canvas_veloc.coords(self.line_y_disp, *flatten(x_coords, scale(self.vel_y, self.veloc_range)))
-        self.canvas_veloc.coords(self.line_z_disp, *flatten(x_coords, scale(self.vel_z, self.veloc_range)))
+        self.canvas_veloc.coords(self.line_x_vel, *flatten(x_coords, scale(self.vel_x, self.veloc_range)))
+        self.canvas_veloc.coords(self.line_y_vel, *flatten(x_coords, scale(self.vel_y, self.veloc_range)))
+        self.canvas_veloc.coords(self.line_z_vel, *flatten(x_coords, scale(self.vel_z, self.veloc_range)))
+
+        # Update live values
+        self.canvas_displ.itemconfigure(self.text_x_disp, text=f"X: {self.disp_x[-1]:.2f}")
+        self.canvas_displ.itemconfigure(self.text_y_disp, text=f"Y: {self.disp_y[-1]:.2f}")
+        self.canvas_displ.itemconfigure(self.text_z_disp, text=f"Z: {self.disp_z[-1]:.2f}")
+
+        self.canvas_accel.itemconfigure(self.text_x_acc, text=f"X: {self.accel_x[-1]:.2f}")
+        self.canvas_accel.itemconfigure(self.text_y_acc, text=f"Y: {self.accel_y[-1]:.2f}")
+        self.canvas_accel.itemconfigure(self.text_z_acc, text=f"Z: {self.accel_z[-1]:.2f}")
+
+        self.canvas_veloc.itemconfigure(self.text_x_vel, text=f"X: {self.vel_x[-1]:.2f}")
+        self.canvas_veloc.itemconfigure(self.text_y_vel, text=f"Y: {self.vel_y[-1]:.2f}")
+        self.canvas_veloc.itemconfigure(self.text_z_vel, text=f"Z: {self.vel_z[-1]:.2f}")
    
     def update_ports(self):
         self.port_box.config(state="normal")
@@ -222,15 +234,27 @@ class App(tk.Tk):
         self.line_y_disp = self.canvas_displ.create_line(0, 0, 0, 0, fill="green", width=2)
         self.line_z_disp = self.canvas_displ.create_line(0, 0, 0, 0, fill="blue", width=2)
 
+        self.text_x_disp = self.canvas_displ.create_text(950, 10, anchor="nw", fill="red", font=("Arial", 10))
+        self.text_y_disp = self.canvas_displ.create_text(950, 30, anchor="nw", fill="green", font=("Arial", 10))
+        self.text_z_disp = self.canvas_displ.create_text(950, 50, anchor="nw", fill="blue", font=("Arial", 10))
+
         # Acceleration lines
         self.line_x_acc = self.canvas_accel.create_line(0, 0, 0, 0, fill="red", width=2)
         self.line_y_acc = self.canvas_accel.create_line(0, 0, 0, 0, fill="green", width=2)
         self.line_z_acc = self.canvas_accel.create_line(0, 0, 0, 0, fill="blue", width=2)
 
+        self.text_x_acc = self.canvas_accel.create_text(950, 10, anchor="nw", fill="red", font=("Arial", 10))
+        self.text_y_acc = self.canvas_accel.create_text(950, 30, anchor="nw", fill="green", font=("Arial", 10))
+        self.text_z_acc = self.canvas_accel.create_text(950, 50, anchor="nw", fill="blue", font=("Arial", 10))
+
         # Velocity lines
         self.line_x_vel = self.canvas_veloc.create_line(0, 0, 0, 0, fill="red", width=2)
         self.line_y_vel = self.canvas_veloc.create_line(0, 0, 0, 0, fill="green", width=2)
         self.line_z_vel = self.canvas_veloc.create_line(0, 0, 0, 0, fill="blue", width=2)
+
+        self.text_x_vel = self.canvas_veloc.create_text(950, 10, anchor="nw", fill="red", font=("Arial", 10))
+        self.text_y_vel = self.canvas_veloc.create_text(950, 30, anchor="nw", fill="green", font=("Arial", 10))
+        self.text_z_vel = self.canvas_veloc.create_text(950, 50, anchor="nw", fill="blue", font=("Arial", 10))
 
     def toggle_connect_device(self):
         def connect_thread():
