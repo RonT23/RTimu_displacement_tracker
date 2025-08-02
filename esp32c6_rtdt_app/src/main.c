@@ -25,13 +25,13 @@
 #include "app_tasks.h"
 #include "mpu6050.h"
 
+static task_config_t task_cfg;
+
 void app_main(void)
 {
     esp_err_t res;
 
     // start with default values
-    task_config_t task_cfg; 
-
     task_cfg.start = false; // keep it idle
     task_cfg.update_rate_ms    = 50;
     task_cfg.accel_noise_floor = 0.5;
